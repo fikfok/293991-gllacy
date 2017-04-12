@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Дмитрий Садовенко](https://up.htmlacademy.ru/htmlcss/17/user/293991).
-* Наставник: <a href="https://htmlacademy.ru/profile/id384171">Дмитрий Бородий</a>.
+* Наставник: [Дмитрий Бородий](https://htmlacademy.ru/profile/id384171).
 
 ---
 
