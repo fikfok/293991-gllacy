@@ -10,7 +10,7 @@
               <nav class="main-navigation">
                   <img src="http://placehold.it/150x100" width="150" height="100" alt="Gllacy shop">
                   <ul class="main-navigation-menu">
-                      <li><a class="btn" href="#">Каталог</a></li>
+                      <li><a class="white-btn" href="#">Каталог</a></li>
                         <ul class="main-sub-menu">
                             <li><a class="main-sub-menu-item" href="#">Новинки</a></li>
                             <li><a class="main-sub-menu-item" href="/gllacy-catalog.html">Сливочное</a></li>
@@ -18,13 +18,13 @@
                             <li><a class="main-sub-menu-item" href="#">Фруктовый лед</a></li>
                             <li><a class="main-sub-menu-item" href="#">Мелорин</a></li>
                         </ul>
-                      <li><a class="btn" href="#">Доставка и оплата</a></li>
-                      <li><a class="btn" href="#">О Компании</a></li>
+                      <li><a class="white-btn" href="#">Доставка и оплата</a></li>
+                      <li><a class="white-btn" href="#">О Компании</a></li>
                   </ul>
                   <ul class="other-navigation">
                       <li>
                           <form action="#" method="get">
-                            <input class="btn search" type="submit" name="btn-search" value="Поиск">
+                            <input class="white-btn search" type="submit" name="btn-search" value="Поиск">
                             <div class="find-form">
                               <input class="txt" type="text" name="text-serch" placeholder="Что ищем?">
                             </div>
@@ -32,11 +32,11 @@
                       </li>
                       <li>
                           <form action="#" method="post">
-                            <a class="btn authorize" href="#">Вход</a>
+                            <a class="white-btn authorize" href="#">Вход</a>
                             <div class="authorize-form">
-                              <input class="txt" type="text" name="authorize-email" placeholder="Электронная почта">
+                              <input class="txt" type="text" name="authorize-email" placeholder="Электронная почта"><br>
                               <input class="txt" type="password" name="authorize-password" placeholder="Пароль">
-                              <input class="btn login" type="submit" name="authorize-login" value="Войти">
+                              <input class="red-btn" type="submit" name="authorize-login" value="Войти">
                               <div class="help-login">
                                   <a href="#">Забыли пароль?</a>
                                   <a href="#">Новая регистрация</a>
@@ -45,7 +45,7 @@
                           </form>
                       </li>
                       <li>
-                          <a class="btn cart" href="#">Пусто</a>
+                          <a class="white-btn cart" href="#">Пусто</a>
                       </li>   
                   </ul>
               </nav>
@@ -53,7 +53,7 @@
       </header>
       <main class="main-container">
           <div class="center-container">
-              <div class="contacts">
+              <div class="working-time-phone">
                   <p class="working-time">
                       С 10 до 20, ежедневно
                   </p>
@@ -63,30 +63,146 @@
               </div>
           </div>
           <div class="slider">
-              <input type="radio" id="slider-1" checked>
-              <label for="slaider-1">
-              <h1 class="slider-title">
-                  Крем-брюле и пломбир<br>
-                  с малиновым джемом
-              </h1>
-              </label>
-              <label for="slider-position-2">
-                  <h1 class="slider-title">
-                      Шоколадный пломбир<br>
-                      и лимонный сорбет
-                  </h1>
-              </label>
-               <label for="slider-position-2">
-                  <h1 class="slider-title">
-                      Пломбир с помадкой<br>
-                      и клубничный щербет
-                  </h1>
-              </label>
-              
+              <div class="slider-inner">
+                  <div class="slider-slides">
+                      <img class="main-background" src="http://placehold.it/150x100" width="150" height="100">
+                      <img class="main-background" src="http://placehold.it/150x100" width="150" height="100">
+                      <img class="main-background" src="http://placehold.it/150x100" width="150" height="100">
+                  </div>
+              </div>
+              <input type="radio" name="toggle" id="slider-1" checked>
+              <input type="radio" name="toggle" id="slider-2">
+              <input type="radio" name="toggle" id="slider-3">              
           </div>
-          
-          
-          
+          <a class="red-btn give-me-two" href="#">Давайте оба!</a>
+          <div class="banners-group">
+              <section class="banner-item">
+                  <img class="banner-background" src="http://placehold.it/150x100" width="150" height="100">
+                  <h2 class="banner-title">Малинка даром!</h2>
+                  <p class="banner-description">
+                      При заказе 2 кг любого фруктового мороженного, добавим в ваш заказ банку малинового варенья бесплатно.
+                  </p>
+                  <a class="red-btn" href="#">Хочу варенье!</a>
+              </section>
+              <section class="banner-item">
+                  <img class="banner-background" src="http://placehold.it/150x100" width="150" height="100">
+                  <h2 class="banner-title">Шоколадки даром!</h2>
+                  <p class="banner-description">
+                      При покупке 2 кг пломбира, добавим в ваш заказ упаковку упаковку вкснейшей шоколадной присыпки совершенно бесплатно.
+                  </p>
+                  <a class="red-btn" href="#">Хочу шоколадки!</a>
+              </section>
+          </div>
+          <div class="hits-group">
+              <section class="hit-item">
+                  <div class="hit-item-photo">
+                      <div class="hit-item-corner-item"></div>
+                  </div>
+                  <p class="hit-price">
+                      <span class="hit-price-value">310 ₽ </span>
+                      <span class="hit-price-for">/кг</span>
+                  </p>
+                  <a href="#">Сливочное с апельсиновым джемом и цитрусвой стружкой</a>
+              </section>
+              <section class="hit-item">
+                  <div class="hit-item-photo">
+                      <div class="hit-item-corner-item"></div>
+                  </div>
+                  <p class="hit-price">
+                      <span class="hit-price-value">380 ₽ </span>
+                      <span class="hit-price-for">/кг</span>
+                  </p>
+                  <a href="#">Сливочно-кофейное с кусочками шоколада</a>
+              </section>
+              <section class="hit-item">
+                  <div class="hit-item-photo">
+                      <div class="hit-item-corner-item"></div>
+                  </div>
+                  <p class="hit-price">
+                      <span class="hit-price-value">355 ₽ </span>
+                      <span class="hit-price-for">/кг</span>
+                  </p>
+                  <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+              </section>
+              <section class="hit-item">
+                  <div class="hit-item-photo">
+                      <div class="hit-item-corner-item"></div>
+                  </div>
+                  <p class="hit-price">
+                      <span class="hit-price-value">355 ₽ </span>
+                      <span class="hit-price-for">/кг</span>
+                  </p>
+                  <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+              </section>
+          </div>
+          <section class="seo">
+              <h2 class="seo-title">Магазин Глейси - это онлайн и офлайн магазин по продаже мороженного собственного производства на развес</h2>
+              <div class="seo-description-1">
+                 Все наше мороженое изготавливается на собственном производстве, с использованием соврвеменного оборудования и проверенных временем технологий 
+              </div>
+              <div class="seo-description-2">
+                  Для приготовления мороженного используются настоящие сливки и молоко высочайшего качетсва. Все дополнительные ингридиенты и добавки произведены из натурального, экологически чистого сырья.
+              </div>
+              <div class="seo-description-3">
+                  Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество
+              </div>
+              <div class="seo-description-4">
+                  Доставка нашего мороженного до заказчика осуществляется в специальном термопаке, который не дает мороженному растаять в пути и позволяет сохранить превосходный вкус.
+              </div>
+          </section>
+          <section class="news">
+              <p class="news-title">Новое в нашем блоге</p>
+              <a class="news-item" href="#">
+                  10 способов сервировки<br>
+                  фруктовых щербетов к<br>
+                  столу
+              </a>
+          </section>
+          <section class="subscription">
+              <div class="subscription-background">
+                  <p class="subscription-description">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+                  <form action="#" method="get">
+                      <input class="txt" type="text" name="subscription-email" placeholder="Электронная почта">
+                      <input class="red-btn" type="submit" name="subscription-email" value="Отправить">
+                  </form>
+              </div>
+          </section>
+          <section class="contacts">
+              <img class="map-background" src="http://placehold.it/150x100" width="150" height="100">
+              <div class="contacts-container">
+                  <p class="contacts-description">
+                      Адрес главного офиса<br>
+                      и офлайн магазина:<br>
+                      <strong class="contacts-description-important">
+                          ул. Большая Конюшенная<br>
+                          19/8, Санкт-Петербург
+                      </strong>
+                      <br>
+                      Для заказов по телефону:<br>
+                      <strong class="contacts-description-important">
+                          8 812 450-25-25
+                      </strong>
+                      (с 10 до 20 ежедневно)
+                  </p>
+                  <a class="red-btn feedback" href="#">Форма обратной связи</a>
+              </div>
+          </section>
+          <section class="feedback">
+              <div class="feedback-background">
+                  <div class="feedback-form">
+                      <img class="feedback-form-close" src="http://placehold.it/150x100" width="15" height="15">
+                      <p class="feedback-title">
+                          Мы обязательно вам ответим!
+                      </p>
+                      <form action="#" method="post">
+                          <input class="txt" type="text" name="feedback-name" placeholder="Как вас зовут?"><br>
+                          <input class="txt" type="text" name="feedback-email" placeholder="Ваша почта для ответа?"><br>
+                          <input class="txt" type="textarea" name="feedback-comment" placeholder="Напишите что-нибудь..."><br>
+                          <input class="red-btn feedback-send" type="submit" name="feedback-send" value="Отправить">
+                      </form>
+                  </div>
+              </div>
+          </section>
       </main>      
         
   </body>
