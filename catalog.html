@@ -148,24 +148,27 @@
 		  <section class="filters">
               <form action="#" method="get">
 
-                  <fieldset class="filter-item">
-                      <legend class="filter-item-caption">Сортировка</legend>
-                      <div class="filter-item-container">
-                          <select>
-                              <option>по популярности</option>
-                              <option>сначала недорогие</option>
-                              <option>сначала дорогие</option>
-                              <option>по жирности</option>
-                          </select>
-                      </div>
-                  </fieldset>
+                  <div class="filter-item-container">
+					  <label class="filter-item-caption" for="filter-order">Сортировка</label><br>
+					  <select class="filter-item-control" id="filter-order">
+						  <option>по популярности</option>
+						  <option>сначала недорогие</option>
+						  <option>сначала дорогие</option>
+						  <option>по жирности</option>
+					  </select>
+				  </div>
 
-                  <fieldset class="filter-item">
-                      <legend class="filter-item-caption">Цена: 100 руб. - 500 руб.</legend>
-                      <div class="filter-item-container">
-                          <input type="range" min="1" max="1000" id="item-price-range" name="item-price-range" multiple>
+                  <div class="filter-item-container">
+                      <p class="filter-item-caption">Цена: 100 руб. - 500 руб.</p>
+                      <div class="filter-item-control">
+						  <div class="filter-item-control-gray-line">
+							  <div class="filter-item-control-light-line">
+								  <button class="filter-item-control-range-button"></button>
+								  <button class="filter-item-control-range-button"></button>
+							  </div>
+						  </div>
                       </div>
-                  </fieldset>
+                  </div>
 
                   <fieldset class="filter-item">
                       <legend class="filter-item-caption">Жирность</legend>
