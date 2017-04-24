@@ -138,12 +138,11 @@ body {
 }
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
-
-
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /*Слайдер*/
 .slider-inner {
     position: relative;
+    margin-bottom: 50px;
 }
 
 .slider-background-image {
@@ -166,7 +165,7 @@ body {
     margin: 0 auto;
     font-size: 60px;
     line-height: 1em;
-    padding-top: 279px;
+    padding-top: 278px;
 }
 
 .slider-background-1 .slider-title {
@@ -186,11 +185,160 @@ body {
     display: none;    
 }
 
+.slider-radio-buttons {
+    float: left;
+}
 
+.give-me-two {
+    position: relative;
+    display: block;
+    font-size: 32px;
+    line-height: 1.37em;
+    padding-left: 475px;
+    z-index: 1;
+    margin-top: -11px;
+    margin-bottom: 52px;
+}
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/*Баннеры*/
+.banners-group {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 41px;
+}
 
+.banner-item {
+    float: left;
+    max-width: 560px;
+    padding-top: 16px;
+    padding-left: 19px;
+    box-sizing: border-box;
+    width: 560px;
+    height: 229px;
+    color: rgb(255, 255, 255);
+}
 
+.banner-item:first-child {
+    margin-right: 26px;
+    background-image: url("/img/background_raspberry.png");
+}
+
+.banner-item:last-child {
+    background-image: url("/img/background_chocolate_crumb.png");
+}
+
+.banner-title {
+    margin-bottom: 18px;
+    font-size: 35px;
+    line-height: 1.17em;
+}
+
+.banner-description {
+    font-size: 18px;
+    line-height: 1.22em;
+    max-width: 516px;
+    
+}
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/*Хиты*/
+.hits-group {
+    margin-bottom: 50px;
+}
+
+.hit-item {
+    float: left;
+    width: 267px;
+    margin-right: 26px;
+}
+
+.hit-item:last-child {
+    margin-right: 0px;
+}
+
+.hit-item-photo {
+    position: relative;
+}
+
+.hit-item-corner-item {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/*seo*/
+.seo {
+    min-height: 306px;
+    font-size: 0px;
+    margin-bottom: 40px;
+}
+
+.seo-title {
+    font-size: 24px;
+    line-height: 1.25em;
+}
+
+.seo-description-1,
+.seo-description-2,
+.seo-description-3,
+.seo-description-4 {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+    line-height: 1.37em;
+}
+
+.seo-description-1,
+.seo-description-3 {
+    width: 480px;
+    margin-bottom: 25px;
+    margin-right: 86px;
+}
+
+.seo-description-2,
+.seo-description-4 {
+    width: 475px;
+}
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/*Хиты*/
+.news,
+.subscription {
+    float: left;
+    width: 560px;
+    min-height: 220px;
+    margin-bottom: 38px;
+}
+
+.news {
+    margin-right: 26px;
+}
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/*Контакты*/
+.contacts {
+    margin-left: -27px;
+    clear: both;
+    position: relative;
+/*    background-image: url("/img/map.jpg");
+    background-repeat: no-repeat;
+*/  
+}
+
+.map-background-pin {
+    position: absolute;
+    top: 139px;
+    left: 266px;
+}
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 
 

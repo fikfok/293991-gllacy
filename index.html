@@ -66,7 +66,7 @@
         </header>
 
         <main class="main-container">
-            <div class="center-container">
+            <div class="center-container clearfix">
 
                 <div class="working-time-phone ">
                     <p class="working-time">
@@ -77,7 +77,7 @@
                     </p>
                 </div>
 
-                <div class="slider ">
+                <div class="slider clearfix">
                     <div class="slider-inner">
                         <div class="slider-slides">
 
@@ -101,45 +101,47 @@
 
                          </div>
                     </div>
-                    <input type="radio" name="toggle" id="slider-1" checked>
-                    <label for="slider-1"></label>
-                    <input type="radio" name="toggle" id="slider-2">
-                    <label for="slider-2"></label>
-                    <input type="radio" name="toggle" id="slider-3">
-                    <label for="slider-3"></label>
+                    
+                    <fieldset class="slider-radio-buttons">
+                        <input type="radio" name="toggle" id="slider-1" checked>
+                        <label for="slider-1"></label>
+                        <input type="radio" name="toggle" id="slider-2">
+                        <label for="slider-2"></label>
+                        <input type="radio" name="toggle" id="slider-3">
+                        <label for="slider-3"></label>
+                    </fieldset>
+                    
+                    <a class="red-btn give-me-two" href="#">Давайте оба!</a>
+
                 </div>
+                <div class="banners-group clearfix SHOWME1">
 
-                <a class="red-btn give-me-two" href="#">Давайте оба!</a>
-                <div class="banners-group">
-
-                    <section class="banner-item">
-                        <img class="banner-background" src="img/background_raspberry.png" width="560" height="220">
+                    <section class="banner-item SHOWME2">
+                        <!--<img class="banner-background" src="img/background_raspberry.png" width="560" height="229">-->
                         <h2 class="banner-title">Малинка даром!</h2>
                         <p class="banner-description">
-                            При заказе 2 кг любого фруктового мороженного, добавим в ваш заказ банку малинового варенья бесплатно.
+                            При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
                         </p>
                         <a class="red-btn" href="#">Хочу варенье!</a>
                     </section>
 
-                    <section class="banner-item">
-                        <img class="banner-background" src="img/background_chocolate_crumb.png" width="560" height="229">
+                    <section class="banner-item SHOWME2">
+                        <!--<img class="banner-background" src="img/background_chocolate_crumb.png" width="560" height="229">-->
                         <h2 class="banner-title">Шоколадки даром!</h2>
                         <p class="banner-description">
-                            При покупке 2 кг пломбира, добавим в ваш заказ упаковку упаковку вкснейшей шоколадной присыпки совершенно бесплатно.
+                            При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
                         </p>
                         <a class="red-btn" href="#">Хочу шоколадки!</a>
                     </section>
 
                 </div>
 
-                <div class="hits-group">
+                <div class="hits-group clearfix SHOWME1">
 
-                    <article class="hit-item">
+                    <article class="hit-item SHOWME2">
                         <div class="hit-item-photo">
                             <img src="img/item_1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусвой стружкой">
-                            <div class="hit-item-corner-item">
-                                <img src="http://placehold.it/150x100" width="15" height="15">
-                            </div>
+                            <img class="hit-item-corner-item" src="img/hit_badge.png" width="60" height="60">
                         </div>
                         <p class="hit-price">
                             <span class="hit-price-value">310 ₽ </span>
@@ -148,12 +150,10 @@
                         <a href="#">Сливочное с апельсиновым джемом и цитрусвой стружкой</a>
                     </article>
 
-                    <article class="hit-item">
+                    <article class="hit-item SHOWME2">
                         <div class="hit-item-photo">
                             <img src="img/item_2.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
-                            <div class="hit-item-corner-item">
-                                <img src="http://placehold.it/150x100" width="15" height="15">
-                            </div>
+                            <img class="hit-item-corner-item" src="img/hit_badge.png" width="60" height="60">
                         </div>
                         <p class="hit-price">
                             <span class="hit-price-value">380 ₽ </span>
@@ -162,12 +162,10 @@
                         <a href="#">Сливочно-кофейное с кусочками шоколада</a>
                     </article>
 
-                    <article class="hit-item">
+                    <article class="hit-item SHOWME2">
                         <div class="hit-item-photo">
                             <img src="img/item_3.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-                            <div class="hit-item-corner-item">
-                                <img src="http://placehold.it/150x100" width="15" height="15">
-                            </div>
+                            <img class="hit-item-corner-item" src="img/hit_badge.png" width="60" height="60">
                         </div>
                         <p class="hit-price">
                             <span class="hit-price-value">355 ₽ </span>
@@ -176,12 +174,10 @@
                         <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
                     </article>
 
-                    <article class="hit-item">
+                    <article class="hit-item SHOWME2">
                         <div class="hit-item-photo">
                             <img src="img/item_4.png" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
-                            <div class="hit-item-corner-item">
-                                <img src="http://placehold.it/150x100" width="15" height="15">
-                            </div>
+                            <img class="hit-item-corner-item" src="img/hit_badge.png" width="60" height="60">
                         </div>
                         <p class="hit-price">
                             <span class="hit-price-value">355 ₽ </span>
@@ -192,23 +188,23 @@
 
                 </div>
 
-                <section class="seo">
+                <section class="seo SHOWME1">
                     <h3 class="seo-title">Магазин Глейси - это онлайн и офлайн магазин по продаже мороженного собственного производства на развес</h3>
                     <div class="seo-description-1">
                         Все наше мороженое изготавливается на собственном производстве, с использованием соврвеменного оборудования и проверенных временем технологий
                     </div>
                     <div class="seo-description-2">
-                        Для приготовления мороженного используются настоящие сливки и молоко высочайшего качетсва. Все дополнительные ингридиенты и добавки произведены из натурального, экологически чистого сырья.
+                        Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество
                     </div>
                     <div class="seo-description-3">
-                        Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество
+                        Для приготовления мороженного используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингридиенты и добавки произведены из натурального, экологически чистого сырья.
                     </div>
                     <div class="seo-description-4">
                         Доставка нашего мороженного до заказчика осуществляется в специальном термопаке, который не дает мороженному растаять в пути и позволяет сохранить превосходный вкус.
                     </div>
                 </section>
 
-                <section class="news">
+                <section class="news SHOWME3">
                     <p class="news-title">Новое в нашем блоге</p>
                     <h3 class="news-item">
                         <a href="#">
@@ -219,7 +215,7 @@
                     </h3>
                 </section>
 
-                <section class="subscription">
+                <section class="subscription SHOWME3">
                     <div class="subscription-background">
                         <p class="subscription-description">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
                         <form action="#" method="get">
@@ -229,7 +225,7 @@
                     </div>
                 </section>
 
-                <section class="contacts">
+                <section class="contacts SHOWME1">
                     <img class="map-background" src="img/map.jpg" width="1200" height="430">
                     <img class="map-background-pin" src="img/map_pin.png" width="218" height="142">
                     <div class="contacts-container">
