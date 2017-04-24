@@ -6,7 +6,7 @@
 body {
     font-size: 12px;
     line-height: 1.2em;
-    font-family: "Roboto Bold";
+    font-family: "Roboto";
     color: rgb(0, 0, 0);
     font-weight: bold;
 }
@@ -26,6 +26,13 @@ body {
 /*------------------------------------------------*/
 /*Размечаю сетку*/
 /*Первая страница*/
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/*Header*/
+.main-header {
+    min-height: 70px;
+}
+
 .center-container {
     width: 1146px;
     margin: 0 auto;
@@ -33,15 +40,16 @@ body {
 }
 
 .logo {
+    position: relative;
+    top: 4.5px;
     float: left;
-    padding-top: 9px;
+    padding-top: 5px;
     margin-right: 23px;
 }
 
 .main-navigation {
     float: left;
     position: relative;
-
     font-size: 16px;
     line-height: 1.12em;
     font-weight: bold;
@@ -112,6 +120,79 @@ body {
     width: 117px;
 }
 
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/*Время работы и телефон*/
+.working-time {
+    font-size: 14px;
+    line-height: 1.14em;
+    margin-bottom: 5px;
+    text-align: right;
+}
+
+.phone {
+    font-size:  22px;
+    line-height: 1em;
+    text-align: right;
+}
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/*Слайдер*/
+.slider-inner {
+    position: relative;
+}
+
+.slider-background-image {
+    position: absolute;
+    top: -30px;
+    left: 250px;
+    z-index: 0;
+}
+
+.slider-background-backlight {
+    position: absolute;
+    top: -114px;
+    left: 78px;
+ }
+
+.slider-title {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 60px;
+    line-height: 1em;
+    padding-top: 279px;
+}
+
+.slider-background-1 .slider-title {
+    width: 670px;
+}
+
+.slider-background-2 .slider-title {
+    width: 645px;
+}
+
+.slider-background-3 .slider-title {
+    width: 632px;
+}
+
+.slider-background-2,
+.slider-background-3 {
+    display: none;    
+}
+
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+
+
+
+
 
 /*------------------------------------------------*/
 /*Служебное*/
@@ -134,4 +215,9 @@ body {
 .SHOWME3 {
     background-color: rgba(255, 129, 176, 0.5);
     outline: 2px solid rgba(255, 13, 104, 0.5);
+}
+
+.SHOWME4 {
+    background-color: rgba(0, 0, 0, 0.5);
+    
 }
