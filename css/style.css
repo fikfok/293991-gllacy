@@ -1,17 +1,7 @@
-/*
-Создайте файл style.css в подпапке css в папке проекта. В этом файле пропишите для body и для заголовков двух типов текстовые стили:
-
-размер шрифта,
-высоту строки,
-цвет шрифта,
-жирность шрифта,
-гарнитуру (название шрифта).
-Для заголовков задавайте текстовые стили с помощью селектора по классу.
-
-Задавать текстовые стили для всех элементов не нужно, достаточно трёх CSS-правил.
-
-Подключать нестандартный шрифт к странице не нужно.
-*/
+* { 
+    margin: 0;
+    padding: 0;
+}
 
 body {
     font-size: 12px;
@@ -31,4 +21,117 @@ body {
  {
     font-size: 35px;
     line-height: 1.17em;
+}
+
+/*------------------------------------------------*/
+/*Размечаю сетку*/
+/*Первая страница*/
+.center-container {
+    width: 1146px;
+    margin: 0 auto;
+    padding: 0 27px;
+}
+
+.logo {
+    float: left;
+    padding-top: 9px;
+    margin-right: 23px;
+}
+
+.main-navigation {
+    float: left;
+    position: relative;
+
+    font-size: 16px;
+    line-height: 1.12em;
+    font-weight: bold;
+}
+
+.navigation-left-menu,
+.main-sub-menu {
+    font-size: 0px;
+}
+
+.navigation-left-menu > li {
+    display: inline-block;
+    position: relative;
+    font-size: 14px;
+}
+
+.main-sub-menu {
+    position: absolute;
+}
+
+.main-sub-menu > li {
+    font-size: 14px;
+}
+
+.navigation-left-side {
+    float: left;
+    width: 707px;
+    padding-top: 30px;
+}
+
+.navigation-right-side {
+    float: right;
+    width: 261px;
+    padding-top: 23px;
+}
+
+.navigation-right-menu-search {
+    float: left;
+    position: relative;
+    width: 32px;
+    margin-right: 10px;
+}
+
+.find-form {
+    position: absolute;
+    top: 36px;
+    right: 0px;
+    width: 340px;
+    height: 84px;
+}
+
+.navigation-right-menu-authorize {
+    float: left;
+    position: relative;
+    width: 92px;
+}
+
+.authorize-form {
+    position: absolute;
+    top: 36px;
+    right: 0px;
+    width: 277px;
+    height: 214px;
+}
+
+.navigation-right-menu-cart {
+    float: right;
+    width: 117px;
+}
+
+
+/*------------------------------------------------*/
+/*Служебное*/
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.SHOWME1 {
+    background-color: rgba(255, 215, 108, 0.5);
+    outline: 2px solid rgba(255, 190, 15, 0.5);
+}
+
+.SHOWME2 {
+    background-color: rgba(120, 255, 168, 0.5);
+    outline: 2px solid rgba(11, 255, 97, 0.5);
+}
+
+.SHOWME3 {
+    background-color: rgba(255, 129, 176, 0.5);
+    outline: 2px solid rgba(255, 13, 104, 0.5);
 }
