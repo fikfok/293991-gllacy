@@ -199,13 +199,13 @@ body {
 .slider-inner {
     position: relative;
     margin-bottom: 50px;
+    z-index: -1;
 }
 
 .slider-background-image {
     position: absolute;
     top: -30px;
     left: 250px;
-    z-index: 0;
 }
 
 .slider-background-backlight {
@@ -246,12 +246,10 @@ body {
 }
 
 .give-me-two {
-    position: relative;
-    display: block;
+    float: left;
     font-size: 32px;
     line-height: 1.37em;
-    padding-left: 475px;
-    z-index: 1;
+    padding-left: 429px;
     margin-top: -11px;
     margin-bottom: 52px;
 }
