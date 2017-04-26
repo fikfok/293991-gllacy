@@ -35,7 +35,7 @@ body {
 
 .center-container {
     position: relative;
-    width: 1146px;/*1146*/
+    width: 1146px;
     margin: 0 auto;
     padding: 0 27px;
 
@@ -631,6 +631,6 @@ body {
     
 }
 
-.HIDEME1 {
+.HIDEME {
     display: none;
 }
