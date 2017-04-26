@@ -38,11 +38,9 @@ body {
     width: 1146px;
     margin: 0 auto;
     padding: 0 27px;
-
 }
 
 .logo {
-    position: relative;
     top: 4.5px;
     float: left;
     padding-top: 5px;
@@ -51,7 +49,6 @@ body {
 
 .main-navigation {
     float: left;
-    position: relative;
     font-size: 16px;
     line-height: 1.12em;
     font-weight: bold;
@@ -64,7 +61,6 @@ body {
 
 .navigation-left-menu > li {
     display: inline-block;
-    position: relative;
     font-size: 14px;
 }
 
@@ -218,7 +214,6 @@ body {
  }
 
 .slider-title {
-    position: relative;
     text-align: center;
     margin: 0 auto;
     font-size: 60px;
@@ -263,7 +258,6 @@ body {
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /*Баннеры*/
 .banners-group {
-    position: relative;
     margin-bottom: 41px;
 }
 
@@ -297,7 +291,6 @@ body {
     font-size: 18px;
     line-height: 1.22em;
     max-width: 516px;
-    
 }
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
@@ -631,6 +624,6 @@ body {
     
 }
 
-.HIDEME {
+.HIDEME1 {
     display: none;
 }
