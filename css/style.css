@@ -101,6 +101,7 @@ body {
     right: 0px;
     width: 340px;
     height: 84px;
+    z-index: 1;
 }
 
 .navigation-right-menu-authorize {
@@ -115,6 +116,7 @@ body {
     right: 0px;
     width: 277px;
     height: 214px;
+    z-index: 1;
 }
 
 .navigation-right-menu-cart {
@@ -199,24 +201,24 @@ body {
 .slider-inner {
     position: relative;
     margin-bottom: 50px;
-    z-index: -1;
 }
 
 .slider-background-image {
     position: absolute;
     top: -30px;
     left: 250px;
+    z-index: -1;
 }
 
 .slider-background-backlight {
     position: absolute;
     top: -114px;
     left: 78px;
+    z-index: -2;
  }
 
 .slider-title {
     position: relative;
-    z-index: 1;
     text-align: center;
     margin: 0 auto;
     font-size: 60px;
@@ -262,7 +264,6 @@ body {
 /*Баннеры*/
 .banners-group {
     position: relative;
-    z-index: 1;
     margin-bottom: 41px;
 }
 
@@ -411,8 +412,7 @@ body {
     width: 1200px;
     height: 2450px;
     background-color: rgba(0, 0, 0, 0.3);
-    z-index: 2;
-    /*display: none;*/
+    z-index: 1;
 }
 
 .feedback-form {
@@ -422,7 +422,7 @@ body {
     width: 477px;
     height: 442px;
     background-color: rgb(255, 255, 255);
-    z-index: 3;
+    z-index: 2;
     background-image: url("/img/icon_x.png");
     background-repeat: no-repeat;
     background-position: right top;
@@ -631,6 +631,6 @@ body {
     
 }
 
-.HIDEME {
+.HIDEME1 {
     display: none;
 }
