@@ -9,7 +9,7 @@ body {
     font-family: "Roboto", "Arial", sans-serif;;
     color: rgb(0, 0, 0);
     font-weight: bold;
-    /*background-color: #97aca1;*/
+    background-color: #849d8f;
 }
 
 .slider-title {
@@ -470,12 +470,16 @@ input[type="radio"] {
 }
 
 .site-wrapper {
-  min-width: 940px;
+position: relative;
+    min-height: 500px;
+    min-width: 940px;
   background-repeat: no-repeat;
   background-position: top center;
 }
 
 .content-wrapper {
+    position: absolute;
+
   width: 1100px;
   margin: 0 auto;
   padding: 0 20px;
