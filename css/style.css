@@ -604,17 +604,17 @@ body {
 .ingredient-btn {
     float: right;
     margin-right: 22px;
-    
 }
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /*Хиты*/
 .hits-group {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .hit-item {
+    position: relative;
     float: left;
     width: 267px;
     margin-right: 26px;
@@ -626,12 +626,59 @@ body {
 
 .hit-item-photo {
     position: relative;
+    margin-bottom: 9px;
 }
 
 .hit-item-corner-item {
     position: absolute;
     top: 0px;
     left: 0px;
+}
+
+.hit-price {
+    position: absolute;
+    top: 208px;
+    left: 0px;
+    color: #ffffff;
+}
+
+.hit-price-value,
+.hit-price-currency,
+.hit-price-for {
+    text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
+}
+
+.hit-price-value,
+.hit-price-currency {
+    font-size: 45px;
+    line-height: 1em;
+    font-weight: bold;
+}
+
+.hit-price-currency {
+    margin-left: -1px;
+    margin-right: -1.5px;
+}
+
+.hit-price-for {
+    font-size: 30px;
+    line-height: 1.5em;
+}
+
+.hit-item-link {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    font-size: 16px;
+    line-height: 1.37em;
+    color: #ffffff;
+    font-weight: normal;
+    text-decoration: none;
+    text-align: center;
+}
+
+.hit-item-link span {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
@@ -641,11 +688,21 @@ body {
     min-height: 306px;
     font-size: 0px;
     margin-bottom: 40px;
+    background-image: url("/img/background_wafer.jpg");
+    border-radius: 15px;
+    color: #000000;
+    padding-top: 25px;
+    padding-right: 30px;
+    padding-bottom: 16px;
+    padding-left: 20px;
+    box-sizing: border-box;
 }
 
 .seo-title {
     font-size: 24px;
     line-height: 1.25em;
+    font-weight: normal;
+    margin-bottom: 9px;
 }
 
 .seo-description-1,
@@ -656,19 +713,46 @@ body {
     vertical-align: top;
     font-size: 16px;
     line-height: 1.37em;
+    font-weight: normal;
+    padding-top: 12px;
+    padding-left: 56px;
+    box-sizing: border-box;
+    margin-bottom: 12px;
 }
 
 .seo-description-1,
 .seo-description-3 {
-    width: 480px;
-    margin-bottom: 25px;
-    margin-right: 86px;
+    min-height: 30px;
+    width: 540px;
+    margin-right: 26px;
 }
 
 .seo-description-2,
 .seo-description-4 {
-    width: 475px;
+    width: 530px;
 }
+
+.seo-description-1 {
+    background-image: url("/img/icon_icecream.png");
+    background-repeat: no-repeat;
+}
+
+.seo-description-2 {
+    background-image: url("/img/icon_cow.png");
+    background-repeat: no-repeat;
+}
+
+.seo-description-3 {
+    background-image: url("/img/icon_leaf.png");
+    background-repeat: no-repeat;
+}
+
+.seo-description-4 {
+    background-image: url("/img/icon_thermometer.png");
+    background-repeat: no-repeat;
+}
+
+
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
