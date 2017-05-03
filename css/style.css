@@ -680,6 +680,14 @@ body {
 .hit-item-link span {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
+
+.hit-item-link:hover {
+    color: #ffbc9e;
+}
+
+.hit-item-link:hover span{
+    border-bottom: 1px solid rgba(255, 188, 158, 0.2);
+}
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -692,8 +700,8 @@ body {
     border-radius: 15px;
     color: #000000;
     padding-top: 25px;
-    padding-right: 30px;
-    padding-bottom: 16px;
+    /*padding-right: 30px;
+    padding-bottom: 16px;*/
     padding-left: 20px;
     box-sizing: border-box;
 }
@@ -718,6 +726,7 @@ body {
     padding-left: 56px;
     box-sizing: border-box;
     margin-bottom: 12px;
+    background-repeat: no-repeat;
 }
 
 .seo-description-1,
@@ -734,22 +743,18 @@ body {
 
 .seo-description-1 {
     background-image: url("/img/icon_icecream.png");
-    background-repeat: no-repeat;
 }
 
 .seo-description-2 {
     background-image: url("/img/icon_cow.png");
-    background-repeat: no-repeat;
 }
 
 .seo-description-3 {
     background-image: url("/img/icon_leaf.png");
-    background-repeat: no-repeat;
 }
 
 .seo-description-4 {
     background-image: url("/img/icon_thermometer.png");
-    background-repeat: no-repeat;
 }
 
 
@@ -763,11 +768,72 @@ body {
     width: 560px;
     min-height: 220px;
     margin-bottom: 38px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 1.37em;
+    color: #000000;
+    text-decoration: none;
 }
 
 .news {
+    padding-top: 23px;
+    padding-left: 20px;
     margin-right: 26px;
+    background-image: url("/img/background_strawberry.png")
 }
+
+.news-title {
+    margin-bottom: 5px;
+}
+
+.news-item-link {
+    font-size: 24px;
+    line-height: 1.25em;
+    color: #000000;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.subscription {
+    background-color: #f8f7f4;
+    background-image: url("/img/background_oblique_lines.png");
+    background-position: -12px 8px;
+    padding: 5px;
+    font-size: 0px;
+}
+
+.subscription-background {
+    min-height: 210px;
+    border-radius: 15px;
+    padding: 29px 22px;
+    background-color: #f8f7f4;
+    box-sizing: border-box;
+}
+
+.subscription-description {
+    font-size: 16px;
+    line-height: 1.37em;
+    font-weight: normal;
+    color: #5a5a5a;
+    margin-bottom: 37px;
+}
+
+.text-subscription {
+    width: 367px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.subscription-email-btn {
+    font-size: 17px;
+    font-weight: bold;
+    width: 129px;
+    padding: 11px 18px;
+}
+
+
+
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
