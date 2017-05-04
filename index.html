@@ -20,7 +20,7 @@
                         <ul class="navigation-left-menu">
                             <li>
                                 <a class="main-menu-btn main-menu-btn-active" href="#">Каталог</a>
-                                <ul class="main-sub-menu HIDEME">
+                                <ul class="main-sub-menu">
                                     <li><a class="main-sub-menu-item" href="#">Новинки</a></li>
                                     <li><a class="main-sub-menu-item" href="/catalog.html">Сливочное</a></li>
                                     <li><a class="main-sub-menu-item" href="#">Щербеты</a></li>
@@ -36,14 +36,14 @@
                     <section class="navigation-right-side">
                         <form class="navigation-right-menu-search" action="#" method="get">
                             <button class="rounded-btn search-btn" type="submit" name="search-btn">Поиск</button>
-                            <div class="find-form HIDEME">
+                            <div class="find-form">
                                 <input class="txt-box text-search" type="text" name="text-search" placeholder="Что ищем?">
                             </div>
                         </form>
 
                         <form class="navigation-right-menu-authorize" action="#" method="post">
                             <a class="rounded-btn authorize-btn" href="#">Вход</a>
-                            <div class="authorize-form clearfix HIDEME">
+                            <div class="authorize-form clearfix">
                                 <input class="txt-box text-authorize-email" type="text" name="authorize-email" placeholder="Электронная почта"><br>
                                 <input class="txt-box authorize-password" type="password" name="authorize-password" placeholder="Пароль">
                                 <button class="red-btn authorize-login-btn" type="submit" name="authorize-login-btn">Войти</button>
@@ -218,7 +218,7 @@
                     <div class="subscription-background">
                         <p class="subscription-description">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
                         <form action="#" method="get">
-                            <input class="txt-box text-subscription" type="text" name="subscription-email" placeholder="Электронная почта">
+                            <input class="txt-box text-subscription" type="email" name="subscription-email" placeholder="Электронная почта">
                             <button class="red-btn subscription-email-btn" type="submit" name="subscription-email-btn">Отправить</button>
                         </form>
                     </div>
@@ -228,18 +228,21 @@
                     <img class="map-background" src="img/map.jpg" width="1200" height="430">
                     <img class="map-background-pin" src="img/map_pin.png" width="218" height="142">
                     <div class="contacts-container">
-                        <p class="contacts-description">
+                        <p class="contacts-description-top">
                             Адрес главного офиса<br>
-                            и офлайн магазина:<br>
-                            <strong class="contacts-description-important">
+                            и офлайн магазина:
+                        </p>
+                        <p class="contacts-description-adress">
                             ул. Большая Конюшенная<br>
                             19/8, Санкт-Петербург
-                            </strong>
-                            <br>
-                            Для заказов по телефону:<br>
-                            <strong class="contacts-description-important">
+                        </p>
+                        <p class="contacts-description-middle">
+                            Для заказов по телефону:
+                        </p>
+                        <p class="contacts-description-important-phone">
                             8 812 450-25-25
-                            </strong>
+                        </p>
+                        <p class="contacts-description-bottom">
                             (с 10 до 20 ежедневно)
                         </p>
                         <a class="red-btn feedback-btn" href="#">Форма обратной связи</a>
@@ -247,15 +250,16 @@
                 </section>
 
                 <section class="feedback HIDEME">
-                    <div class="feedback-form">
+                    <div class="feedback-form clearfix">
+                        <button class="feedback-form-close-btn" type="button" title="Закрыть">Закрыть</button>
                         <p class="feedback-title">
                             Мы обязательно вам ответим!
                         </p>
                         <form action="#" method="post">
-                            <input class="txt-box" type="text" name="feedback-name" placeholder="Как вас зовут?"><br>
-                            <input class="txt-box" type="text" name="feedback-email" placeholder="Ваша почта для ответа?"><br>
-                            <input class="txt-box" type="textarea" name="feedback-comment" placeholder="Напишите что-нибудь..."><br>
-                            <button class="red-btn feedback-send" type="submit" name="feedback-send-btn">Отправить</button>
+                            <input class="txt-box feedback-name" type="text" name="feedback-name" placeholder="Как вас зовут?">
+                            <input class="txt-box feedback-email" type="email" name="feedback-email" placeholder="Ваша почта для ответа?">
+                            <textarea class="txt-box feedback-comment" tname="feedback-comment" placeholder="Напишите что-нибудь..." rows="10"></textarea>
+                            <button class="red-btn feedback-send-btn" type="submit" name="feedback-send-btn">Отправить</button>
                         </form>
                     </div>
                 </section>
@@ -267,10 +271,10 @@
             <div class="center-container clearfix">
 
                 <section class="footer-social">
-                    <a class="social-btn social-btn-twt" href="#">Твиттер</a>
-                    <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-                    <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-                    <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+                    <a class="social-btn-border social-btn-twt" href="#">Твиттер</a>
+                    <a class="social-btn-border social-btn-inst" href="#">Инстаграм</a>
+                    <a class="social-btn-border social-btn-fb" href="#">Фейсбук</a>
+                    <a class="social-btn-border social-btn-vk" href="#">Вконтакте</a>
                 </section>
 
                 <section class="footer-links clearfix">

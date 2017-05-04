@@ -97,12 +97,12 @@ body {
 }
 
 .main-menu-btn:hover {
-    background-color: #ffffff;
+    background-color: #f7f6f3;
     color: #000000;
 }
 
 .main-menu-btn:active {
-    background-color: #ffffff;
+    background-color: #ededed;
     color: #000000;
     box-shadow: inset 0px 2px 1px 0px #696969;
 }
@@ -310,6 +310,7 @@ body {
 .authorize-password {
     width: 240px;
     margin-bottom: 20px;    
+    position: relative;
 }
 
 .red-btn {
@@ -322,7 +323,7 @@ body {
     box-shadow: 0px 1px 2px 0px rgba(172, 16, 0, 0.64);
     border-width: 0px;
     border-style: solid;
-    border-radius: 20px;
+    border-radius: 25px;
     font-size: 18px;
     line-height: 1.33em;
     font-weight: bold;
@@ -547,6 +548,10 @@ body {
     cursor: pointer;
 }
 
+.slider-button-label:hover {
+    background-color: #b2c1b7;
+}
+
 #slider-button-1:checked ~ .label-container label[for="slider-button-1"],
 #slider-button-2:checked ~ .label-container label[for="slider-button-2"],
 #slider-button-3:checked ~ .label-container label[for="slider-button-3"] {
@@ -767,7 +772,7 @@ body {
     float: left;
     width: 560px;
     min-height: 220px;
-    margin-bottom: 38px;
+    margin-bottom: 40px;
     border-radius: 15px;
     box-sizing: border-box;
     font-size: 16px;
@@ -793,6 +798,10 @@ body {
     color: #000000;
     font-weight: bold;
     text-decoration: underline;
+}
+
+.news-item-link:hover {
+    color: #e84d37;
 }
 
 .subscription {
@@ -831,9 +840,6 @@ body {
     width: 129px;
     padding: 11px 18px;
 }
-
-
-
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -853,21 +859,58 @@ body {
 .contacts-container {
     position: absolute;
     left: 870px;
-    top: 62px;
+    top: 60px;
     width: 302px;
     min-height: 305px;
     background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 31px 25px;
+    box-sizing: border-box;
+}
+
+.contacts-description-top,
+.contacts-description-middle,
+.contacts-description-bottom {
+    font-size: 14px;
+    line-height: 1.42em;
+    font-weight: normal;
+    color: #323232;
+    margin-bottom: 5px;
+}
+
+.contacts-description-bottom {
+    margin-bottom: 25px;
+}
+
+.contacts-description-adress,
+.contacts-description-important-phone {
+    font-size: 18px;
+    line-height: 1.33em;
+}
+
+.contacts-description-adress {
+    margin-bottom: 18px;
+}
+
+.contacts-description-important-phone {
+    margin-bottom: 3px;
+}
+
+.feedback-btn {
+    width: 253px;
+    padding: 10px 28px;
+    border-radius: 25px;
 }
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /*Модальное окно обратной связи*/
 .feedback {
-    position: absolute;
-    top: -70px;
+    position: fixed;
+    top: 0px;
     left: 0px;
-    width: 1200px;
-    height: 2450px;
+    width: 100%;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.3);
     z-index: 1;
 }
@@ -875,15 +918,85 @@ body {
 .feedback-form {
     position: absolute;
     top: 338px;
-    left: 363px;
+    left: 50%;
+    margin-left: -237px;
     width: 477px;
     height: 442px;
+    padding: 17px 24px;
     background-color: rgb(255, 255, 255);
-    z-index: 2;
-    background-image: url("/img/icon_x.png");
     background-repeat: no-repeat;
     background-position: right top;
+    border-radius: 10px;
+    z-index: 2;
+    box-sizing: border-box;
 }
+
+.feedback-title {
+    font-size: 24px;
+    line-height: 1.16em;
+    font-weight: bold;
+    color: #323232;
+    margin-bottom: 20px;
+}
+
+.feedback-name,
+.feedback-email {
+    width: 270px;
+    margin-bottom: 20px;
+}
+
+.feedback-comment {
+    height: 155px;
+    width: 400px;
+    resize: none;
+    margin-bottom: 23px;
+    padding-top: 10px;
+}
+
+.feedback-name,
+.feedback-email,
+.feedback-comment {
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+.feedback-send-btn {
+    float: right;
+    padding: 11px 21px;
+}
+
+.feedback-form-close-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 22px;
+    height: 22px;
+    font-size: 0;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.feedback-form-close-btn::before,
+.feedback-form-close-btn::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 1px;
+    width: 20px;
+    height: 2px;
+    background-color: #000000;
+    border-radius: 1px;
+}
+
+.feedback-form-close-btn::before {
+    transform: rotate(45deg);
+}
+
+.feedback-form-close-btn::after {
+    transform: rotate(-45deg);
+}
+
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -1000,20 +1113,101 @@ body {
 
 .footer-social,
 .footer-links {
-   padding-top: 36px;
+   padding-top: 32px;
 }
 
 .footer-social {
     float: left;
     font-size: 0px;
     margin-right: 213px;
+    padding-left: 2px;
  }
 
-.footer-social a {
-    font-size: 12px;
-    line-height: 1.5em;
+.social-btn-border {
+    position: relative;
     display: inline-block;
+    width: 36px;
+    height: 36px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    margin-right: 13px;
+    box-sizing: border-box;
 }
+
+.social-btn-border:hover {
+    border: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+.social-btn-twt::before,
+.social-btn-inst::before,
+.social-btn-fb::before,
+.social-btn-vk::before {
+    position: absolute;
+    content: "";
+    display: block;
+    top: -1px;
+    left: -1px;
+    width: 38px;
+    height: 38px;
+
+    background-repeat: no-repeat;
+    background-position: 1px 1px;
+    border-radius: 50%;
+    opacity: 0.8;
+    box-sizing: border-box;
+}
+
+.social-btn-twt:hover::before,
+.social-btn-inst:hover::before,
+.social-btn-fb:hover::before,
+.social-btn-vk:hover::before {
+    opacity: 1;
+}
+
+.social-btn-twt::after,
+.social-btn-inst::after,
+.social-btn-fb::after,
+.social-btn-vk::after {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 0px;
+    left: 0px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    opacity: 0;
+    box-sizing: border-box;
+}
+
+.social-btn-twt:active::after,
+.social-btn-inst:active::after,
+.social-btn-fb:active::after,
+.social-btn-vk:active::after {
+    box-shadow: inset 0px 2px 1px 0px #888888;
+    opacity: 1;
+}
+
+.social-btn-twt::before {
+    background-image: url("/img/icon_tw.png");
+}
+
+.social-btn-inst::before {
+    background-image: url("/img/icon_in.png");
+}
+
+.social-btn-fb::before {
+    background-image: url("/img/icon_fb.png");
+}
+
+.social-btn-vk::before {
+    background-image: url("/img/icon_vk.png");
+}
+
+
+
+
+
 
 .footer-links {
     float: left;
