@@ -1106,12 +1106,13 @@ body {
 /*Соцкнопки*/
 .main-footer {
     min-height: 103px;
-    padding-top: 30px;
+    padding-top: 00px;
 }
 
 .footer-social {
     float: left;
     font-size: 0px;
+    margin-top: 32px;
     margin-right: 202px;
     padding-left: 2px;
  }
@@ -1199,10 +1200,10 @@ body {
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /*ссылки*/
-.footer-links {
+.footer-links-table {
     float: left;
     display: table;
-    margin-right: 140px;
+    margin-top: 30px;
 }
 
 .footer-links-row {
@@ -1211,10 +1212,10 @@ body {
 
 .footer-links-cel {
     display: table-cell;
-
 }
 
 .footer-link {
+    position: relative;
     font-size: 13px;
     line-height: 1.38em;
     font-weight: bold;
@@ -1223,46 +1224,122 @@ body {
     margin-bottom: 5px;
 }
 
+.footer-link::after {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 15px;
+    left: 0px;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.footer-link:hover {
+    color: #ffbc9e;
+}
+
+.footer-link:hover::after {
+    background-color: rgba(255, 188, 158, 0.2);
+}
+
 .footer-links-row .footer-links-cel:first-child {
+    width: 143px;
     padding-left: 21px;
+}
+
+.footer-links-row:first-child .footer-links-cel:first-child {
+    padding-left: 0px;
 }
 
 .footer-links-row:first-child .footer-links-cel {
     padding-bottom: 5px;
 }
 
-.footer-links-row:first-child  .footer-links-cel:nth-child(1) {
-    width: 143px;
-}
-
 .footer-links-cel-hart {
-    background-image: url("/img/icon_heart.png");
+    padding-left: 21px;
+    background-image: url("/img/icon_heart_not_active.png");
     background-repeat: no-repeat;
     background-position: 0px 2px;    
 }
 
+.footer-links-cel-hart:hover {
+    background-image: url("/img/icon_heart_active.png");
+    background-repeat: no-repeat;
+    background-position: 0px 2px;    
+}
+
+.footer-links-cel-hart::after {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 15px;
+    left: 21px;
+    right: 0px;
+    width: auto;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.footer-links-cel-hart:hover::after {
+    background-color: rgba(255, 188, 158, 0.2);
+}
 
 .footer-copyright {
     float: right;
     max-width: 200px;
-    font-size: 0px;
-    padding: 19px;
+    margin-top: 15px;
+    margin-right: -12px;
+    padding: 0px;
+    color: #ffffff;
 }
 
-.footer-copyright > a,
-.footer-copyright > p {
+.footer-copyright-logo,
+.footer-copyright-description {
     float: left;
+    display: block;
 }
 
-.footer-copyright > p {
+.footer-copyright-logo {
+    margin-bottom: 10px;
+}
+
+.footer-copyright-description {
+    min-height: 10px;
     font-size: 12px;
     line-height: 1.5px;
+    font-weight: normal;
 }
+
+.htmlacademy-link {
+    position: relative;
+    font-size: 12px;
+    line-height: 1.5px;
+    font-weight: normal;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.htmlacademy-link::after {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 15px;
+    left: 0px;
+    height: 1px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.2);;
+}
+
+.htmlacademy-link:hover {
+    color: #ffbc9e;
+}
+
+.htmlacademy-link:hover::after {
+    background-color: rgba(255, 188, 158, 0.2);
+}
+
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-
-
-
-
 
 
 
