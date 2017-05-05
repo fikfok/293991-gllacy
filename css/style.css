@@ -9,8 +9,16 @@ body {
     font-family: "Roboto", "Arial", sans-serif;;
     color: rgb(0, 0, 0);
     font-weight: bold;
+}
+
+.index {
     background-color: #849d8f;
 }
+
+.catalog {
+    background-color: #97aca0;
+}
+
 
 .slider-title {
     font-size: 60px;
