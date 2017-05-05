@@ -38,6 +38,7 @@
                             <button class="rounded-btn search-btn" type="submit" name="search-btn">Поиск</button>
                             <div class="find-form">
                                 <input class="txt-box text-search" type="text" name="text-search" placeholder="Что ищем?">
+                                
                             </div>
                         </form>
 
@@ -48,8 +49,8 @@
                                 <input class="txt-box authorize-password" type="password" name="authorize-password" placeholder="Пароль">
                                 <button class="red-btn authorize-login-btn" type="submit" name="authorize-login-btn">Войти</button>
                                 <div class="help-login">
-                                    <a href="#">Забыли пароль?</a>
-                                    <a href="#">Новая регистрация</a>
+                                    <a class="help-login-link" href="#">Забыли пароль?</a>
+                                    <a class="help-login-link" href="#">Новая регистрация</a>
                                 </div>
                             </div>
                         </form>
@@ -249,14 +250,17 @@
                     </div>
                 </section>
 
-                <section class="feedback HIDEME">
+                <section class="feedback hideme">
                     <div class="feedback-form clearfix">
                         <button class="feedback-form-close-btn" type="button" title="Закрыть">Закрыть</button>
                         <p class="feedback-title">
                             Мы обязательно вам ответим!
                         </p>
                         <form action="#" method="post">
-                            <input class="txt-box feedback-name" type="text" name="feedback-name" placeholder="Как вас зовут?">
+                            <div class="txt-box-container">
+                                <input class="txt-box feedback-name" type="text" name="feedback-name" placeholder="Как вас зовут?" >
+                                <p class="txt-box-lable"></p>
+                            </div>
                             <input class="txt-box feedback-email" type="email" name="feedback-email" placeholder="Ваша почта для ответа?">
                             <textarea class="txt-box feedback-comment" tname="feedback-comment" placeholder="Напишите что-нибудь..." rows="10"></textarea>
                             <button class="red-btn feedback-send-btn" type="submit" name="feedback-send-btn">Отправить</button>
@@ -271,16 +275,16 @@
             <div class="center-container clearfix">
 
                 <section class="footer-social">
-                    <a class="social-btn-border social-btn-twt" >Твиттер</a>
-                    <a class="social-btn-border social-btn-inst" >Инстаграм</a>
-                    <a class="social-btn-border social-btn-fb" >Фейсбук</a>
-                    <a class="social-btn-border social-btn-vk" >Вконтакте</a>
+                    <a class="social-btn-border social-btn-twt" href="">Твиттер</a>
+                    <a class="social-btn-border social-btn-inst" href="">Инстаграм</a>
+                    <a class="social-btn-border social-btn-fb" href="">Фейсбук</a>
+                    <a class="social-btn-border social-btn-vk" href="">Вконтакте</a>
                 </section>
 
                 <div class="footer-links-table">
                     <div class="footer-links-row">
                         <div class="footer-links-cel">
-                            <a class="footer-link footer-links-cel-hart" href="#">Для поставщиков</a>
+                            <a class="footer-link footer-link-hart" href="#">Для поставщиков</a>
                         </div>
                         <div class="footer-links-cel">
                             <a class="footer-link" href="#">Наши документы</a>
@@ -303,6 +307,22 @@
 
             </div>
         </footer>
-
+    <script>
+        var btn_feedback_open = document.querySelector(".feedback-btn");
+        var btn_feedback_close = document.querySelector(".feedback-form-close-btn");
+        var frm_feedback = document.querySelector(".feedback");
+        
+        btn_feedback_open.addEventListener("click", function(event){
+            event.preventDefault();
+            frm_feedback.classList.add("showeme");
+        });
+        
+        btn_feedback_close.addEventListener("click", function(event){
+            event.preventDefault();
+            frm_feedback.classList.remove("showeme");
+        });
+        
+        
+    </script>
     </body>
 </html>

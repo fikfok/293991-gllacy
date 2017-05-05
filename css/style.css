@@ -240,11 +240,6 @@ body {
     position: absolute;
     top: 36px;
     right: 0px;
-    padding-top: 4px;
-    z-index: 1;
-}
-
-.find-form {
     width: 340px;
     height: 84px;
     padding: 20px 15px;
@@ -252,6 +247,7 @@ body {
     box-sizing: border-box;
     border-radius: 6px;
     box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+    z-index: 1;
 }
 
 .txt-box {
@@ -351,7 +347,7 @@ body {
     font-size: 0px;
 }
 
-.help-login a {
+.help-login-link {
     position: relative;
     display: inline-block;
     height: 15px;
@@ -363,7 +359,11 @@ body {
     text-decoration: none;
 }
 
-.help-login a::after {
+.help-login-link:hover {
+    color: #e84d37;
+}
+
+.help-login-link::after {
     display: block;
     position: absolute;
     top: 7px;
@@ -371,10 +371,14 @@ body {
     content: "";
     width: 100%;
     height: 1px;
-    background: #323232;
+    background: rgba(50, 50, 50, 0.3);
 }
 
-.help-login a:first-child {
+.help-login-link:hover::after {
+    background: rgba(232, 77, 55, 0.3);
+}
+
+.help-login-link:first-child {
     margin-bottom: 5px;
 }
 
@@ -1256,20 +1260,20 @@ body {
     padding-bottom: 5px;
 }
 
-.footer-links-cel-hart {
+.footer-link-hart {
     padding-left: 21px;
     background-image: url("/img/icon_heart_not_active.png");
     background-repeat: no-repeat;
     background-position: 0px 2px;    
 }
 
-.footer-links-cel-hart:hover {
+.footer-link-hart:hover {
     background-image: url("/img/icon_heart_active.png");
     background-repeat: no-repeat;
     background-position: 0px 2px;    
 }
 
-.footer-links-cel-hart::after {
+.footer-link-hart::after {
     position: absolute;
     content: "";
     display: block;
@@ -1281,7 +1285,7 @@ body {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
-.footer-links-cel-hart:hover::after {
+.footer-link-hart:hover::after {
     background-color: rgba(255, 188, 158, 0.2);
 }
 
@@ -1340,10 +1344,57 @@ body {
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/*
+.txt-box-container {
+    position: relative;
+}
+
+.txt-box-placeholder {
+    position: absolute;
+    display: none;
+    top: -12px;
+    left: 13px;
+    font-size: 11px;
+    line-height: 1.18em;
+    font-weight: normal;
+    color: #5b9ddf;
+}
+
+.txt-box:focus ~ .txt-box-lable:before {
+    display: inline-block;
+}
+
+
+.txt-box:not([value=""])::before {
+    background-color: red;
+}
+
+
+.txt-box:[value=""]::before {
+    background-color: green;
+}
 
 
 
 
+.txt-box-container {
+    position: relative;
+}
+
+.txt-box-lable:before {
+    position: absolute;
+    content: "qqqqqqqqq";
+    display: inline-block;
+    top: -15px;
+    left: 13px;
+    width: 100px;
+    height: 20px;
+    font-size: 11px;
+    line-height: 1.18em;
+    font-weight: normal;
+    color: #5b9ddf;
+}
+*/
 /*------------------------------------------------*/
 /*Служебное*/
 .clearfix::after {
@@ -1352,26 +1403,11 @@ body {
     clear: both;
 }
 
-.SHOWME1 {
-    background-color: rgba(255, 215, 108, 0.5);
-    outline: 2px solid rgba(255, 190, 15, 0.5);
-}
-
-.SHOWME2 {
-    background-color: rgba(120, 255, 168, 0.5);
-    outline: 2px solid rgba(11, 255, 97, 0.5);
-}
-
-.SHOWME3 {
-    background-color: rgba(255, 129, 176, 0.5);
-    outline: 2px solid rgba(255, 13, 104, 0.5);
-}
-
-.SHOWME4 {
-    background-color: rgba(0, 0, 0, 0.5);
-    
-}
-
-.HIDEME {
+.hideme {
     display: none;
 }
+
+.showeme {
+    display: block;
+}
+
