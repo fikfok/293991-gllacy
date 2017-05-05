@@ -638,6 +638,26 @@ body {
     margin-right: 0px;
 }
 
+.hit-item::before {
+    position: absolute;
+    content: "";
+    display: none;
+    min-height: 367px;
+    width: 293px;
+    left: -13px;
+    background-color: #ffffff;
+    opacity: 0.2;
+    border-radius: 5px;
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+    z-index: -1;
+}
+
+.hit-item:hover::before {
+    display: block;
+}
+
+
+
 .hit-item-photo {
     position: relative;
     margin-bottom: 9px;
