@@ -820,27 +820,10 @@ body {
     margin-right: 0px;
 }
 
-.hit-item::before {
-    position: absolute;
-    content: "";
-    display: none;
-    min-height: 367px;
-    width: 293px;
-    left: -13px;
-    background-color: #ffffff;
-    opacity: 0.2;
-    border-radius: 5px;
-    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
-    z-index: -1;
-}
-
-.hit-item:hover::before {
-    display: block;
-}
-
 .hit-item-photo {
     position: relative;
     margin-bottom: 9px;
+    z-index: 2;
 }
 
 .hit-item-corner-item {
@@ -854,6 +837,7 @@ body {
     top: 208px;
     left: 0px;
     color: #ffffff;
+        z-index: 2;
 }
 
 .hit-price-value,
@@ -889,6 +873,7 @@ body {
     font-weight: normal;
     text-decoration: none;
     text-align: center;
+
 }
 
 .hit-item-link span {
@@ -902,6 +887,37 @@ body {
 .hit-item-link:hover span{
     border-bottom: 1px solid rgba(255, 188, 158, 0.2);
 }
+
+
+/*.hit-item::before*/ 
+.hit-item-container {
+    position: absolute;
+    content: "";
+    display: none;
+    min-height: 367px;
+    width: 293px;
+    top: 0px;
+    left: -13px;
+    background-color: #ffffff;
+    opacity: 0.2;
+    border-radius: 5px;
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+    z-index: -1;
+}
+
+/*.hit-item:hover::before*/
+.hit-item-link1:hover ~ .hit-item-container,
+.hit-item-link1:hover ~ .fast-view {
+    display: block;
+    z-index: 1;
+}
+
+
+.fast-view {
+    /*position: absolute;*/
+    display: inline-block;
+}
+
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
