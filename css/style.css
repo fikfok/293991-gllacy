@@ -410,6 +410,19 @@ body {
     background-position: 16px 6px;
 }
 
+.cart-btn-not-empty {
+    padding-left: 40px;
+    background-image: url("/img/icon_cart_not_empty.png");
+    background-repeat: no-repeat;
+    background-position: 16px 6px;
+    color: #323232;
+    background-color: #f7f6f3;
+}
+
+.cart-btn-not-empty:hover ~ .cart-content {
+    display: block;
+}
+
 .navigation-right-menu-cart {
     float: right;
     width: 117px;
@@ -417,6 +430,7 @@ body {
 
 .cart-content {
     position: absolute;
+    display: none;
     right: 0px;
     top: 59px;
     z-index: 1;
@@ -502,7 +516,7 @@ body {
 .breadcrumbs-links li:last-child .breadcumbs-links-item::before {
     display: none;
 }
-
+*/
 .working-time-phone {
     float: right;
     color: #ffffff;

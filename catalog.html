@@ -19,7 +19,7 @@
                         <ul class="navigation-left-menu">
                             <li>
                                 <a class="main-menu-btn main-menu-btn-active" href="#">Каталог</a>
-                                <ul class="main-sub-menu hideme">
+                                <ul class="main-sub-menu">
                                     <li><a class="main-sub-menu-item" href="#">Новинки</a></li>
                                     <li><a class="main-sub-menu-item" href="/catalog.html">Сливочное</a></li>
                                     <li><a class="main-sub-menu-item" href="#">Щербеты</a></li>
@@ -35,17 +35,25 @@
                     <section class="navigation-right-side">
                         <form class="navigation-right-menu-search" action="#" method="get">
                             <button class="rounded-btn search-btn" type="submit" name="search-btn">Поиск</button>
-                            <div class="find-form hideme">
-                                <input class="txt-box text-search" type="text" name="text-search" placeholder="Что ищем?">
-                                
+                            <div class="find-form">
+                                <div class="txt-box-container">
+                                    <input class="txt-box text-search" type="text" name="text-search" placeholder="Что ищем?" required>
+                                    <span class="txt-box-lable">Что ищем?</span>
+                                </div>
                             </div>
                         </form>
 
                         <form class="navigation-right-menu-authorize" action="#" method="post">
                             <a class="rounded-btn authorize-btn" href="#">Вход</a>
-                            <div class="authorize-form clearfix hideme">
-                                <input class="txt-box text-authorize-email" type="text" name="authorize-email" placeholder="Электронная почта"><br>
-                                <input class="txt-box authorize-password" type="password" name="authorize-password" placeholder="Пароль">
+                            <div class="authorize-form clearfix">
+                                <div class="txt-box-container">
+                                    <input class="txt-box text-authorize-email" type="text" name="authorize-email" placeholder="Электронная почта" required><br>
+                                    <span class="txt-box-lable">Электронная почта</span>
+                                </div>
+                                <div class="txt-box-container">
+                                    <input class="txt-box authorize-password" type="password" name="authorize-password" placeholder="Пароль" required>
+                                    <span class="txt-box-lable">Пароль</span>
+                                </div>
                                 <button class="red-btn authorize-login-btn" type="submit" name="authorize-login-btn">Войти</button>
                                 <div class="help-login">
                                     <a class="help-login-link" href="#">Забыли пароль?</a>
@@ -56,50 +64,48 @@
 
                         <div class="navigation-right-menu-cart">
                             <a class="rounded-btn cart-btn-not-empty" href="#">2 товара</a>
-                        </div>
-                    </section>
 
-                    <div class="cart-content hideme">
-                        <div class="cart-content-table">
+                            <div class="cart-content">
+                                <div class="cart-content-table">
 
-                            <div class="cart-table-row">
-                                <div class="cart-table-cel">
-                                    <img class="cart-icon-delete" src="img/icon_x.png" width="10" height="10" alt="Удалить">
-                                </div>
-                                <div class="cart-table-cel">
-                                    <img class="cart-icon-delete" src="img/item_1_small.png" width="33" height="33" alt="Пломбир с апельсиновым джемом">
-                             
-                                </div>
-                                <div class="cart-table-cel">
-                                    <span class="item-in-cart">Пломбир с апелисиновым джемом</span>
-                                </div>
-                                <div class="cart-table-cel">
-                                    <span class="item-in-cart-weight">1,5 кг х </span><span class="item-in-cart-price">200 руб.</span>
-                                </div>
-                                <div class="cart-table-cel">
-                                    <span class="item-in-cart-total">300 руб.</span>
-                                </div>
-                            </div>
+                                    <div class="cart-table-row">
+                                        <div class="cart-table-cel">
+                                            <img class="cart-icon-delete" src="img/icon_x.png" width="10" height="10" alt="Удалить">
+                                        </div>
+                                        <div class="cart-table-cel">
+                                            <img class="cart-icon-delete" src="img/item_1_small.png" width="33" height="33" alt="Пломбир с апельсиновым джемом">
 
-                            <div class="cart-table-row">
-                                <div class="cart-table-cel">
-                                    <img class="cart-icon-delete" src="img/icon_x.png" width="10" height="10" alt="Удалить">
-                                </div>
-                                <div class="cart-table-cel">
-                                    <img class="cart-icon-item" src="img/item_3_small.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
-                                </div>
-                                <div class="cart-table-cel">
-                                    <span class="item-in-cart">Клубничный пломбир с присыпкой из белого шоколада</span>
-                                </div>
-                                <div class="cart-table-cel">
-                                    <span class="item-in-cart-weight">1,5 кг х </span><span class="item-in-cart-price">300 руб.</span>
-                                </div>
-                                <div class="cart-table-cel">
-                                    <span class="item-in-cart-total">450 руб.</span>
-                                </div>
-                            </div>
+                                        </div>
+                                        <div class="cart-table-cel">
+                                            <span class="item-in-cart">Пломбир с апелисиновым джемом</span>
+                                        </div>
+                                        <div class="cart-table-cel">
+                                            <span class="item-in-cart-weight">1,5 кг х </span><span class="item-in-cart-price">200 руб.</span>
+                                        </div>
+                                        <div class="cart-table-cel">
+                                            <span class="item-in-cart-total">300 руб.</span>
+                                        </div>
+                                    </div>
 
-                        </div>
+                                    <div class="cart-table-row">
+                                        <div class="cart-table-cel">
+                                            <img class="cart-icon-delete" src="img/icon_x.png" width="10" height="10" alt="Удалить">
+                                        </div>
+                                        <div class="cart-table-cel">
+                                            <img class="cart-icon-item" src="img/item_3_small.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+                                        </div>
+                                        <div class="cart-table-cel">
+                                            <span class="item-in-cart">Клубничный пломбир с присыпкой из белого шоколада</span>
+                                        </div>
+                                        <div class="cart-table-cel">
+                                            <span class="item-in-cart-weight">1,5 кг х </span><span class="item-in-cart-price">300 руб.</span>
+                                        </div>
+                                        <div class="cart-table-cel">
+                                            <span class="item-in-cart-total">450 руб.</span>
+                                        </div>
+                                    </div>
+
+                                </div>
                         
                         <div class="cart-footer">
                             <p class="cart-total-price">Итого: 750 руб.</p>
@@ -107,6 +113,9 @@
                         </div>                        
                         
                     </div>
+
+                        </div>
+                    </section>
 
                 </nav>
             </div>
