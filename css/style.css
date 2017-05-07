@@ -1372,57 +1372,48 @@ body {
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-/*
-.txt-box-container {
-    position: relative;
+
+.txt-box:hover {
+    border-width: 2px;
 }
 
-.txt-box-placeholder {
+.txt-box:focus {
+    border-width: 2px;
+    border-color: #5b9ddf;
+    outline: none;
+}
+
+.txt-box-container {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.txt-box-lable {
     position: absolute;
     display: none;
-    top: -12px;
-    left: 13px;
-    font-size: 11px;
-    line-height: 1.18em;
-    font-weight: normal;
-    color: #5b9ddf;
-}
-
-.txt-box:focus ~ .txt-box-lable:before {
-    display: inline-block;
-}
-
-
-.txt-box:not([value=""])::before {
-    background-color: red;
-}
-
-
-.txt-box:[value=""]::before {
-    background-color: green;
-}
-
-
-
-
-.txt-box-container {
-    position: relative;
-}
-
-.txt-box-lable:before {
-    position: absolute;
-    content: "qqqqqqqqq";
-    display: inline-block;
     top: -15px;
     left: 13px;
-    width: 100px;
+    width: 150px;
     height: 20px;
     font-size: 11px;
     line-height: 1.18em;
     font-weight: normal;
+    color: #999999;
+}
+
+input.txt-box:valid ~ .txt-box-lable,
+textarea.txt-box:valid ~ .txt-box-lable {
+    display: block;
+}
+
+input.txt-box:valid:focus ~ .txt-box-lable,
+textarea.txt-box:valid ~ .txt-box-lable  {
     color: #5b9ddf;
 }
-*/
+
+
+
 /*------------------------------------------------*/
 /*Служебное*/
 .clearfix::after {
