@@ -19,7 +19,6 @@ body {
     background-color: #97aca0;
 }
 
-
 .slider-title {
     font-size: 60px;
     line-height: 1em;
@@ -30,6 +29,7 @@ body {
  {
     font-size: 35px;
     line-height: 1.17em;
+    color: #ffffff;
 }
 
 /*------------------------------------------------*/
@@ -40,6 +40,10 @@ body {
 /*Header*/
 .main-header {
     min-height: 70px;
+}
+
+.index .main-header {
+    margin-bottom: -2px;    
 }
 
 .center-container {
@@ -572,15 +576,19 @@ body {
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /*main-container-header*/
-.main-container-header {
+.index .main-container-header {
     margin-bottom: 0px;
+}
+
+.catalog .main-container-header {
+    margin-bottom: 2px;
 }
 
 .catalog .breadcrumbs {
     position: relative;
     float: left;
     font-size: 0px;
-    margin-top: 26px;
+    margin-top: 27px;
 }
 
 .catalog .breadcrumbs-links li {
@@ -616,7 +624,6 @@ body {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
-
 .breadcrumbs-links li:last-child .breadcumbs-links-item::after {
     display: none;
 }
@@ -633,21 +640,17 @@ body {
 .working-time {
     font-size: 14px;
     line-height: 1.14em;
-    margin-bottom: 5px;
     text-align: right;
 }
 
-.index .phone {
-    font-size:  22px;
-    line-height: 1em;
-    text-align: right;
+.working-time {
+    margin-bottom: 7px;    
 }
 
-.catalog .phone {
+.phone {
     font-size:  22px;
     line-height: 1em;
     text-align: right;
-    margin-top: 7px;
 }
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
