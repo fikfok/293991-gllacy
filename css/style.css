@@ -129,8 +129,12 @@ body {
     position: relative;
 }
 
-.main-sub-menu {
+.navigation-left-menu > li:hover .main-sub-menu {
     display: block;
+}
+
+.main-sub-menu {
+    display: none;
     position: absolute;
     z-index: 1;
     width: 143px;
@@ -243,8 +247,12 @@ body {
     background-color: #ffffff;
 }
 
-.find-form {
+.search-btn:hover ~ .find-form {
     display: block;
+}
+
+.find-form {
+    display: none;
     position: absolute;
     top: 36px;
     right: 0px;
@@ -294,8 +302,13 @@ body {
     background-color: #ffffff;
 }
 
+.authorize-btn:hover ~ .authorize-form {
+    display: block;
+}
+
 .authorize-form {
     position: absolute;
+    display: none;
     top: 36px;
     right: -2px;
     width: 277px;
