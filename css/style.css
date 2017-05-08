@@ -806,39 +806,45 @@ body {
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /*Хиты*/
 .hits-group {
-    margin-bottom: 40px;
+    margin-bottom: 21px;
 }
 
 .hit-item {
     position: relative;
     float: left;
-    /*width: 267px;*/
-    /*margin-right: 26px;*/
-    width: 293px;
-    padding-left: 13px;
-    padding-right: 13px;
-    padding-top: 6px;
-    padding-bottom: 22px;
+    width: 267px;
+    margin-right: 26px;
     box-sizing: border-box;
     border-radius: 5px;
     z-index: 2;
 }
 
-.hit-item:first-child {
-    margin-left: -13px;
+.hit-item:last-child {
+    margin-right: 0px;
+}
+
+.hit-item::before {
+	content: "";
+	display: none;
+	position: absolute;
+	left: -13px;
+	top: -6px;
+	z-index: -1;
+	width: 293px;
+	height: 328px;
+	padding-bottom: 77px;
+	background-color: rgba(255, 255, 255, 0.2);
+	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+	border-radius: 5px;
 }
 
 .hit-item:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+    z-index: 1;
 }
 
-.hit-item:hover .fast-view {
-    display: block;
-}
-
-.hit-item:last-child {
-    margin-right: -13px;
+.hit-item:hover::before,
+.hit-item:hover .fast-view-btn{
+	display: block;
 }
 
 .hit-item-photo {
@@ -856,7 +862,7 @@ body {
 .hit-price {
     position: absolute;
     top: 208px;
-    left: 13px;
+    left: 0px;
     color: #ffffff;
     z-index: 2;
 }
@@ -886,7 +892,7 @@ body {
 
 .hit-item-link-container {
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 19px;
 }
 
 .hit-item-link {
@@ -911,12 +917,14 @@ body {
     border-bottom: 1px solid rgba(255, 188, 158, 0.2);
 }
 
-.fast-view {
+.fast-view-btn {
     display: none;
+    position: absolute;
     width: 200px;
     padding-left: 16px;
     padding-right: 16px;
-    margin: 0 auto;
+
+    left: 33px;
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -1301,7 +1309,7 @@ body {
 }
 
 /*
-.fast-view {
+.fast-view-btn {
     position: absolute;
     top: 345px;
     right: 50px;
