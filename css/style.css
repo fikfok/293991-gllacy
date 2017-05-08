@@ -1636,3 +1636,15 @@ textarea.txt-box:valid ~ .txt-box-lable  {
     display: block;
 }
 
+.body-background-1 {
+    background-color: #849d8f;
+}
+
+.body-background-2 {
+    background-color: #8996a6;
+}
+
+.body-background-3 {
+    background-color: #9d8b84;
+}
+
