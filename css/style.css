@@ -605,12 +605,20 @@ body {
     font-weight: normal;
 }
 
-.breadcumbs-links-item::after {
+.breadcrumbs-links li {
+    position: relative;
+}
+
+.breadcrumbs-links li::after {
     position: absolute;
     display: block;
+    width: 10px;
+    height: 10px;
     content: "»";
-    top: 1px;
-    right: -14px;
+    top: 7px;
+    right: -17px;
+    font-size: 14px;
+    color: #ffffff;
 }
 
 .breadcumbs-links-item::before {
@@ -624,12 +632,17 @@ body {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
-.breadcrumbs-links li:last-child .breadcumbs-links-item::after {
+.breadcrumbs-links li:last-child .breadcumbs-links-item::before,
+.breadcrumbs-links li:last-child::after {
     display: none;
 }
 
-.breadcrumbs-links li:last-child .breadcumbs-links-item::before {
-    display: none;
+a.breadcumbs-links-item:hover {
+    color: #ffbc9e;
+}
+
+.breadcumbs-links-item:hover::before {
+    background-color: #ffbc9e;
 }
 
 .working-time-phone {
@@ -816,7 +829,7 @@ body {
     margin-right: 26px;
     box-sizing: border-box;
     border-radius: 5px;
-    z-index: 2;
+    z-index: 1;
 }
 
 .hit-item:last-child {
@@ -859,7 +872,8 @@ body {
     left: 0px;
 }
 
-.hit-price {
+.hit-price,
+.catalog-item-price {
     position: absolute;
     top: 208px;
     left: 0px;
@@ -869,35 +883,42 @@ body {
 
 .hit-price-value,
 .hit-price-currency,
-.hit-price-for {
+.hit-price-for,
+.catalog-item-price-value,
+.catalog-item-price-currency,
+.catalog-item-price-for {
     text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
 }
 
 .hit-price-value,
-.hit-price-currency {
+.hit-price-currency,
+.catalog-item-price-value,
+.catalog-item-price-currency {
     font-size: 45px;
     line-height: 1em;
     font-weight: bold;
 }
 
-.hit-price-currency {
+.hit-price-currency,
+.catalog-item-price-currency {
     margin-left: -1px;
     margin-right: -1.5px;
 }
 
-.hit-price-for {
+.hit-price-for,
+.catalog-item-price-for{
     font-size: 30px;
     line-height: 1.5em;
 }
 
-.hit-item-link-container {
+.hit-item-link-container,
+.catalog-item-link-container {
     text-align: center;
     margin-bottom: 19px;
 }
 
-.hit-item-link {
-    position: relative;
-    vertical-align: top;
+.hit-item-link,
+.catalog-item-link {
     font-size: 16px;
     line-height: 1.37em;
     color: #ffffff;
@@ -905,15 +926,18 @@ body {
     text-decoration: none;
 }
 
-.hit-item-link span {
+.hit-item-link span,
+.catalog-item-link span {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.hit-item-link:hover {
+.hit-item-link:hover,
+.catalog-item-link:hover {
     color: #ffbc9e;
 }
 
-.hit-item-link:hover span {
+.hit-item-link:hover span,
+.catalog-item-link:hover span {
     border-bottom: 1px solid rgba(255, 188, 158, 0.2);
 }
 
@@ -1229,14 +1253,12 @@ body {
 .feedback-form-close-btn::after {
     transform: rotate(-45deg);
 }
-
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /*Вторая страница. Основной блок*/
-
 .current-item-title {
-    margin-bottom: 25px;
+    margin-bottom: 27px;
 }
 
 .filters {
@@ -1274,9 +1296,126 @@ body {
     width: 702px;
 }
 
-.filter-item-caption {
-    margin-bottom: 5px;
+.filter-item-caption-order,
+.filter-item-caption-price {
+    font-size: 14px;
+    line-height: 1.14em;
+    font-weight: normal;
+    color: #ffffff;
+    padding-left: 16px;
 }
+
+.filter-item-caption-order {
+margin-bottom: 17px;    
+}
+
+.filter-item-caption-price {
+    margin-bottom: 13px;
+}
+
+
+.filter-item-control {
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.filter-item-control-order-conteiner::before {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 36px;
+    top: -8px;
+    left: 0px;
+    content: "";
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    z-index: -1;
+}
+
+.filter-item-control-order {
+    font-size: 16px;
+    line-height: 1.18em;
+    background-color: transparent;
+    color: #ffffff;
+    border-width: 0px;
+    width: 174px;
+}
+
+.filter-item-control-order-conteiner:hover::before {
+    background-color: #ffffff;
+}
+
+.filter-item-control-order:hover {
+    color: #323232;
+}
+
+.filter-item-control-price-range {
+    position: relative;
+    height: 36px;
+}
+
+.filter-item-control-price-range::before {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 36px;
+    top: -5px;
+    left: 0px;
+    content: "";
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    z-index: -1;
+}
+
+
+
+
+
+.first-range-button,
+.second-range-button {
+    position: absolute;
+    display: block;
+    top: 3px;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    border-width: 0px;
+    cursor: pointer;
+    background-color: #f8f7f4;
+}
+
+.first-range-button {
+    left: 35px;
+}
+
+.second-range-button {
+    left: 135px;
+}
+
+.filter-item-control-gray-line {
+    position: absolute;
+    display: block;
+    top: 9px;
+    left: 15px;
+    width: 190px;
+    height: 6px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.filter-item-control-light-line {
+    position: absolute;
+    display: block;
+    top: 9px;
+    left: 45px;
+    width: 100px;
+    height: 6px;
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+
 
 .apply-filter {
     vertical-align: bottom;
@@ -1298,6 +1437,21 @@ body {
     line-height: 1.37em;
 }
 
+.catalog-item::before {
+	content: "";
+	display: none;
+	position: absolute;
+	left: -13px;
+	top: -6px;
+	z-index: -1;
+	width: 293px;
+	height: 328px;
+	padding-bottom: 77px;
+	background-color: rgba(255, 255, 255, 0.2);
+	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+	border-radius: 5px;
+}
+
 .catalog-item:nth-child(4n) {
     margin-right: 0px;
 }
@@ -1308,16 +1462,15 @@ body {
     left: 0px;
 }
 
-/*
-.fast-view-btn {
-    position: absolute;
-    top: 345px;
-    right: 50px;
-    font-size: 18px;
-    line-height: 1.33em;
+.catalog-item:hover {
     z-index: 1;
 }
-*/
+
+.catalog-item:hover::before,
+.catalog-item:hover .fast-view-btn{
+	display: block;
+}
+
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -1617,8 +1770,6 @@ input.txt-box:valid:focus ~ .txt-box-lable,
 textarea.txt-box:valid ~ .txt-box-lable  {
     color: #5b9ddf;
 }
-
-
 
 /*------------------------------------------------*/
 /*Служебное*/
