@@ -16,7 +16,7 @@ body {
 }
 
 .catalog-site {
-    background-color: #97aca0;
+    background-color: #849d8f;
 }
 
 .slider-title {
@@ -1647,19 +1647,13 @@ fieldset.filter-item-container {
     border: none;
 }
 
-
-
-
-
-
-
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /*Каталог*/
 .catalog {
     font-size: 0px;
-    margin-bottom: 46px;
+    margin-bottom: 42px;
 }
 
 .catalog-item {
@@ -1727,16 +1721,14 @@ fieldset.filter-item-container {
     display: inline-block;
     font-size: 16px;
     line-height: 1.12em;
-    margin-right: 19px;
+    margin-right: 1px;
 }
 
 .paginator-links li:last-child {
     margin-right: 0px;    
 }
 
-.paginator-btn,
-.arrow-disabled,
-.arrow-active {
+.paginator-btn{
     font-size: 16px;
     line-height: 1.12em;
     text-decoration: none;
@@ -1744,27 +1736,100 @@ fieldset.filter-item-container {
     font-weight: normal;
 }
 
-.paginator-btn {
+.paginator-btn,
+.paginator-btn-arrow {
+    position: relative;
     display: inline-block;
-    width: 26px;
+    vertical-align: top;
+    background-color: transparent;
+    min-width: 26px;
     height: 26px;
-    border-radius: 50%;
+    border-radius: 20px;
+    padding: 4px 9px;
+    text-align: center;
+    box-sizing: border-box;
 }
 
 .paginator-btn-active {
-    background-color: #ffffff;
     color: #323232;
+    background-color: #ffffff;
 }
 
-.arrow-active {
-    margin-right
+.paginator-btn:not(.paginator-btn-active):hover,
+.paginator-btn-arrow:not(.arrow-disabled):hover {
+    background-color: #9db1a5;
 }
 
-/*color: #323232;*/
+
+.left-arrow::before,
+.left-arrow::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 10px;
+    height: 2px;
+    background-color: #ffffff;
+    z-index: 1;
+}
+
+.left-arrow::before {
+    top: 15px;
+    left: 7px;
+
+}
+
+.left-arrow::after {
+    top: 9px;
+    left: 7px;
+
+}
+
+.left-arrow::before {
+    transform: rotate(45deg);
+}
+
+.left-arrow::after {
+    transform: rotate(-45deg);
+}
 
 .arrow-disabled {
     opacity: 0.2;
 }
+
+.right-arrow::before,
+.right-arrow::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 10px;
+    height: 2px;
+    background-color: #ffffff;
+    z-index: 1;
+}
+
+.right-arrow::before {
+    top: 15px;
+    right: 7px;
+
+}
+
+.right-arrow::after {
+    top: 9px;
+    right: 7px;
+
+}
+
+.right-arrow::before {
+    transform: rotate(-45deg);
+}
+
+.right-arrow::after {
+    transform: rotate(45deg);
+}
+
+
+
+
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
