@@ -667,7 +667,7 @@ a.breadcumbs-links-item:hover {
 }
 
 .working-time {
-    margin-bottom: 7px;    
+    margin-bottom: 5px;    
 }
 
 .phone {
@@ -932,6 +932,12 @@ a.breadcumbs-links-item:hover {
     margin-bottom: 19px;
 }
 
+.catalog-item-link-container {
+    width: 256px;
+    margin: 0 auto;
+    margin-bottom: 8px;
+}
+
 .hit-item-link,
 .catalog-item-link {
     font-size: 16px;
@@ -977,8 +983,6 @@ a.breadcumbs-links-item:hover {
     border-radius: 15px;
     color: #000000;
     padding-top: 25px;
-    /*padding-right: 30px;
-    padding-bottom: 16px;*/
     padding-left: 20px;
     box-sizing: border-box;
 }
@@ -1278,12 +1282,12 @@ a.breadcumbs-links-item:hover {
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /*Вторая страница. Блок фильтров*/
 .current-item-title {
-    margin-bottom: 25px;
+    margin-bottom: 24px;
 }
 
 .filters {
     font-size: 0px;
-    margin-bottom: 42px;
+    margin-bottom: 40px;
 }
 
 .filter-item-container {
@@ -1669,6 +1673,9 @@ fieldset.filter-item-container {
     line-height: 1.37em;
 }
 
+.catalog-item-photo {
+    margin-bottom: 7px;
+}
 .catalog-item::before {
 	content: "";
 	display: none;
