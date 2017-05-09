@@ -1727,6 +1727,43 @@ fieldset.filter-item-container {
     display: inline-block;
     font-size: 16px;
     line-height: 1.12em;
+    margin-right: 19px;
+}
+
+.paginator-links li:last-child {
+    margin-right: 0px;    
+}
+
+.paginator-btn,
+.arrow-disabled,
+.arrow-active {
+    font-size: 16px;
+    line-height: 1.12em;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: normal;
+}
+
+.paginator-btn {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+}
+
+.paginator-btn-active {
+    background-color: #ffffff;
+    color: #323232;
+}
+
+.arrow-active {
+    margin-right
+}
+
+/*color: #323232;*/
+
+.arrow-disabled {
+    opacity: 0.2;
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
