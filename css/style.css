@@ -856,7 +856,7 @@ a.breadcumbs-links-item:hover {
 	height: 328px;
 	padding-bottom: 77px;
 	background-color: rgba(255, 255, 255, 0.2);
-	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.1);
 	border-radius: 5px;
 }
 
@@ -956,7 +956,7 @@ a.breadcumbs-links-item:hover {
 }
 
 .fast-view-btn {
-    display:block;
+    display: none;
     position: absolute;
     width: 200px;
     padding-left: 16px;
