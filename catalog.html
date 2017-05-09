@@ -174,11 +174,11 @@
 
                         <fieldset class="filter-item-container">
                             <legend class="filter-item-caption-fat">Жирность</legend>
-                            <div class="filter-item-container-rdbt">
-                                <input class="rdbt" type="radio" id="fat-rdbt-1" name="fat" value="0">
-                                <input class="rdbt" type="radio" id="fat-rdbt-2" name="fat" value="10">
-                                <input class="rdbt" type="radio" id="fat-rdbt-3" name="fat" value="30">
-                                <input class="rdbt" type="radio" id="fat-rdbt-4" name="fat" value="more 30">
+                            <div class="filter-item-container-fat">
+                                <input class="rdbt-fat" type="radio" id="fat-rdbt-1" name="fat" value="0">
+                                <input class="rdbt-fat" type="radio" id="fat-rdbt-2" name="fat" value="10" checked>
+                                <input class="rdbt-fat" type="radio" id="fat-rdbt-3" name="fat" value="30">
+                                <input class="rdbt-fat" type="radio" id="fat-rdbt-4" name="fat" value="more 30">
                                 
                                 <label class="rdbt-filter-labels" for="fat-rdbt-1">0%</label>
                                 <label class="rdbt-filter-labels" for="fat-rdbt-2">до 10%</label>
@@ -190,16 +190,17 @@
                         <fieldset class="filter-item-container">
                             <legend class="filter-item-caption-fillers">Наполнители</legend>
                             <div class="filter-item-container-fillers">
-                                <input class="chck" type="checkbox" id="chck-1" name="шоколадные" checked>
-                                <label class="filter-labels" for="chck-1">шоколадные</label>
-                                <input class="chck" type="checkbox" id="chck-2" name="сахарные присыпки" checked>
-                                <label class="filter-labels" for="chck-2">сахарные присыпки</label>
-                                <input class="chck" type="checkbox" id="chck-3" name="фрукты">
-                                <label class="filter-labels" for="chck-3">фрукты</label>
-                                <input class="chck" type="checkbox" id="chck-4" name="сиропы">
-                                <label class="filter-labels" for="chck-4">сиропы</label>
-                                <input class="chck" type="checkbox" id="chck-5" name="джемы">
-                                <label class="filter-labels" for="chck-5">джемы</label>
+                                <input class="chck-fillers" type="checkbox" id="fillers-chck-1" name="шоколадные" checked>
+                                <input class="chck-fillers" type="checkbox" id="fillers-chck-2" name="сахарные присыпки" checked>
+                                <input class="chck-fillers" type="checkbox" id="fillers-chck-3" name="фрукты">
+                                <input class="chck-fillers" type="checkbox" id="fillers-chck-4" name="сиропы">
+                                <input class="chck-fillers" type="checkbox" id="fillers-chck-5" name="джемы">
+                                
+                                <label class="chck-filter-labels" for="fillers-chck-1"><span class="checkmark"></span>шоколадные</label>
+                                <label class="chck-filter-labels" for="fillers-chck-2"><span class="checkmark"></span>сахарные присыпки</label>
+                                <label class="chck-filter-labels" for="fillers-chck-3"><span class="checkmark"></span>фрукты</label>
+                                <label class="chck-filter-labels" for="fillers-chck-4"><span class="checkmark"></span>сиропы</label>
+                                <label class="chck-filter-labels" for="fillers-chck-5"><span class="checkmark"></span>джемы</label>
                             </div>
                         </fieldset>
 

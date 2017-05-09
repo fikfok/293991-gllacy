@@ -1434,14 +1434,14 @@ fieldset.filter-item-container {
     border: none;
 }
 
-.filter-item-container-rdbt {
+.filter-item-container-fat {
     position: relative;
     font-size: 0px;
     padding-left: 46px;
     box-sizing: border-box;
 }
 
-.filter-item-container-rdbt::before{
+.filter-item-container-fat::before{
     position: absolute;
     display: block;
     width: 100%;
@@ -1454,21 +1454,31 @@ fieldset.filter-item-container {
     z-index: -1;
 }
 
-.catalog input[name="fat"] {
+.rdbt-fat,
+.chck-fillers {
     display: none;
 }
 
-.rdbt-filter-labels {
+.rdbt-filter-labels,
+.chck-filter-labels {
     position: relative;
     display: inline-block;
-    margin-right: 50px;
     font-size: 16px;
     line-height: 1.12em;
     font-weight: normal;
     color: #ffffff;
+    cursor: pointer
 }
 
-.rdbt-filter-labels:last-child {
+.rdbt-filter-labels {
+    margin-right: 50px;
+}
+.chck-filter-labels {
+    margin-right: 55px;
+}
+
+.rdbt-filter-labels:last-child,
+.chck-filter-labels:last-child {
     margin-right: 0px;
 }
 
@@ -1512,11 +1522,99 @@ fieldset.filter-item-container {
 }
 
 
+.filter-item-container-fillers {
+    position: relative;
+    font-size: 0px;
+    padding-left: 46px;
+    box-sizing: border-box;
+}
+
+.filter-item-container-fillers::before {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 36px;
+    top: -8px;
+    left: 0px;
+    content: "";
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    z-index: -1;
+}
+
+.filter-item-caption-fillers {
+    margin-bottom: 18px;
+}
+
+.chck-filter-labels {
+    position: relative;
+}
+
+.chck-filter-labels::before {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 0px;
+    left: -31px;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.chck-filter-labels:hover::before {
+    border-width: 2px;
+}
+
+.checkmark {
+    position: relative;
+}
+
+.checkmark::before,
+.checkmark::after {
+    position: absolute;
+    content: "";
+    display: none;
+    height: 2px;
+    background-color: #ffffff;
+}
+
+.checkmark::before {
+    top: 10px;
+    left: -27px;
+    width: 6px;
+}
+
+.checkmark::after {
+    top: 8px;
+    left: -24px;
+    width: 10px;
+}
+
+.checkmark::before {
+    transform: rotate(45deg);
+}
+
+.checkmark::after {
+    transform: rotate(-45deg);
+}
 
 
-
-
-
+#fillers-chck-1:checked ~ .chck-filter-labels[for="fillers-chck-1"] .checkmark::before,
+#fillers-chck-2:checked ~ .chck-filter-labels[for="fillers-chck-2"] .checkmark::before,
+#fillers-chck-3:checked ~ .chck-filter-labels[for="fillers-chck-3"] .checkmark::before,
+#fillers-chck-4:checked ~ .chck-filter-labels[for="fillers-chck-4"] .checkmark::before,
+#fillers-chck-5:checked ~ .chck-filter-labels[for="fillers-chck-5"] .checkmark::before,
+#fillers-chck-1:checked ~ .chck-filter-labels[for="fillers-chck-1"] .checkmark::after,
+#fillers-chck-2:checked ~ .chck-filter-labels[for="fillers-chck-2"] .checkmark::after,
+#fillers-chck-3:checked ~ .chck-filter-labels[for="fillers-chck-3"] .checkmark::after,
+#fillers-chck-4:checked ~ .chck-filter-labels[for="fillers-chck-4"] .checkmark::after,
+#fillers-chck-5:checked ~ .chck-filter-labels[for="fillers-chck-5"] .checkmark::after {
+    display: block;
+}
 
 
 
