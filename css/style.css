@@ -1316,7 +1316,9 @@ a.breadcumbs-links-item:hover {
 }
 
 .filter-item-caption-order,
-.filter-item-caption-price {
+.filter-item-caption-price,
+.filter-item-caption-fat,
+.filter-item-caption-fillers {
     font-size: 14px;
     line-height: 1.14em;
     font-weight: normal;
@@ -1324,7 +1326,8 @@ a.breadcumbs-links-item:hover {
     padding-left: 16px;
 }
 
-.filter-item-caption-order {
+.filter-item-caption-order,
+.filter-item-caption-fat {
     margin-bottom: 17px;    
 }
 
@@ -1373,12 +1376,12 @@ a.breadcumbs-links-item:hover {
     height: 36px;
 }
 
-.filter-item-control-price-range::before {
+.filter-item-control-price-range::before{
     position: absolute;
     display: block;
     width: 100%;
     height: 36px;
-    top: -5px;
+    top: -4px;
     left: 0px;
     content: "";
     background-color: rgba(255, 255, 255, 0.2);
@@ -1390,7 +1393,7 @@ a.breadcumbs-links-item:hover {
 .second-range-button {
     position: absolute;
     display: block;
-    top: 3px;
+    top: 4px;
     width: 20px;
     height: 20px;
     border-radius: 20px;
@@ -1431,6 +1434,95 @@ fieldset.filter-item-container {
     border: none;
 }
 
+.filter-item-container-rdbt {
+    position: relative;
+    font-size: 0px;
+    padding-left: 46px;
+    box-sizing: border-box;
+}
+
+.filter-item-container-rdbt::before{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 36px;
+    top: -8px;
+    left: 0px;
+    content: "";
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    z-index: -1;
+}
+
+.catalog input[name="fat"] {
+    display: none;
+}
+
+.rdbt-filter-labels {
+    position: relative;
+    display: inline-block;
+    margin-right: 50px;
+    font-size: 16px;
+    line-height: 1.12em;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+.rdbt-filter-labels:last-child {
+    margin-right: 0px;
+}
+
+.rdbt-filter-labels::before {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 0px;
+    left: -31px;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.rdbt-filter-labels::after {
+    position: absolute;
+    content: "";
+    display: none;
+    top: 4px;
+    left: -27px;
+    width: 12px;
+    height: 12px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+.rdbt-filter-labels:hover::before {
+    border-width: 2px;
+}
+
+#fat-rdbt-1:checked ~ .rdbt-filter-labels[for="fat-rdbt-1"]::after,
+#fat-rdbt-2:checked ~ .rdbt-filter-labels[for="fat-rdbt-2"]::after,
+#fat-rdbt-3:checked ~ .rdbt-filter-labels[for="fat-rdbt-3"]::after,
+#fat-rdbt-4:checked ~ .rdbt-filter-labels[for="fat-rdbt-4"]::after {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1469,7 +1561,7 @@ fieldset.filter-item-container {
 	height: 328px;
 	padding-bottom: 77px;
 	background-color: rgba(255, 255, 255, 0.2);
-	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.1);
 	border-radius: 5px;
 }
 

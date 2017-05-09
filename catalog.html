@@ -47,7 +47,7 @@
                             <a class="rounded-btn authorize-btn" href="#">Вход</a>
                             <div class="authorize-form clearfix">
                                 <div class="txt-box-container">
-                                    <input class="txt-box text-authorize-email" type="text" name="authorize-email" placeholder="Электронная почта" required><br>
+                                    <input class="txt-box text-authorize-email" type="text" name="authorize-email" placeholder="Электронная почта" required>
                                     <span class="txt-box-lable">Электронная почта</span>
                                 </div>
                                 <div class="txt-box-container">
@@ -173,21 +173,22 @@
                         </div>
 
                         <fieldset class="filter-item-container">
-                            <legend class="filter-item-caption">Жирность</legend>
-                            <div class="filter-item-container-radiobuttons">
-                                <input class="rdbt" type="radio" id="rdbt-1" name="fat" value="0">
-                                <label class="filter-labels" for="rdbt-1">0%</label>
-                                <input class="rdbt" type="radio" id="rdbt-2" name="fat" value="10">
-                                <label class="filter-labels" for="rdbt-2">до 10%</label>
-                                <input class="rdbt" type="radio" id="rdbt-3" name="fat" value="30">
-                                <label class="filter-labels" for="rdbt-3">до 30%</label>
-                                <input class="rdbt" type="radio" id="rdbt-4" name="fat" value="more 30">
-                                <label class="filter-labels" for="rdbt-4">выше 30%</label>
+                            <legend class="filter-item-caption-fat">Жирность</legend>
+                            <div class="filter-item-container-rdbt">
+                                <input class="rdbt" type="radio" id="fat-rdbt-1" name="fat" value="0">
+                                <input class="rdbt" type="radio" id="fat-rdbt-2" name="fat" value="10">
+                                <input class="rdbt" type="radio" id="fat-rdbt-3" name="fat" value="30">
+                                <input class="rdbt" type="radio" id="fat-rdbt-4" name="fat" value="more 30">
+                                
+                                <label class="rdbt-filter-labels" for="fat-rdbt-1">0%</label>
+                                <label class="rdbt-filter-labels" for="fat-rdbt-2">до 10%</label>
+                                <label class="rdbt-filter-labels" for="fat-rdbt-3">до 30%</label>
+                                <label class="rdbt-filter-labels" for="fat-rdbt-4">выше 30%</label>
                             </div>
                         </fieldset>
 
                         <fieldset class="filter-item-container">
-                            <legend class="filter-item-caption">Наполнители</legend>
+                            <legend class="filter-item-caption-fillers">Наполнители</legend>
                             <div class="filter-item-container-fillers">
                                 <input class="chck" type="checkbox" id="chck-1" name="шоколадные" checked>
                                 <label class="filter-labels" for="chck-1">шоколадные</label>
