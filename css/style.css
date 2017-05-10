@@ -1,3 +1,27 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url("../fonts/robotobold.woff2") format('woff2'),
+         url('../fonts/robotobold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/robotomedium.woff2') format('woff2'),
+         url('../fonts/robotomedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto.woff2') format('woff2'),
+         url('../fonts/roboto.woff') format('woff');
+    font-weight: lighter;
+    font-style: normal;
+}
+
 * { 
     margin: 0;
     padding: 0;
@@ -38,12 +62,12 @@ body {
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /*Header*/
-.main-header {
+.catalog-site .main-header {
     min-height: 70px;
 }
 
-.index-site .main-header {
-    margin-bottom: -2px;    
+.catalog-site .main-header {
+    min-height: 70px;
 }
 
 .center-container {
@@ -200,7 +224,7 @@ body {
     color: #000000;
     font-size: 14px;
     line-height: 1.14em;
-    font-weight: normal;
+    font-weight: lighter;
     text-decoration: none;
 }
 
@@ -282,20 +306,6 @@ body {
     -webkit-box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
             box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
     z-index: 1;
-}
-
-.txt-box {
-    height: 43px;
-    border-color: #d3d3d2;
-    border-radius: 5px;
-    border-style: solid;
-    border-width: 1px;
-    padding: 13px 13px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    font-size: 14px;
-    line-height: 1.71em;
-    color: #000000;
 }
 
 .text-search {
@@ -409,7 +419,7 @@ body {
     vertical-align: top;
     font-size: 13px;
     line-height: 1.84px;
-    font-weight: normal;
+    font-weight: lighter;
     color: #323232;
     text-decoration: none;
 }
@@ -638,7 +648,7 @@ body {
     line-height: 1.14em;
     color: #ffffff;
     text-decoration: none;
-    font-weight: normal;
+    font-weight: lighter;
 }
 
 .breadcrumbs-links li {
@@ -895,13 +905,13 @@ a.breadcumbs-links-item:hover {
 }
 
 .hit-item:hover::before,
-.hit-item:hover .fast-view-btn{
+.hit-item:hover .fast-view-btn {
 	display: block;
 }
 
 .hit-item-photo {
     position: relative;
-    margin-bottom: 9px;
+    margin-bottom: 11px;
     z-index: 2;
 }
 
@@ -950,7 +960,7 @@ a.breadcumbs-links-item:hover {
 }
 
 .hit-price-for,
-.catalog-item-price-for{
+.catalog-item-price-for {
     font-size: 30px;
     line-height: 1.5em;
 }
@@ -1010,7 +1020,7 @@ a.breadcumbs-links-item:hover {
     margin-bottom: 40px;
     background-image: url("../img/background_wafer.jpg");
     border-radius: 15px;
-    color: #000000;
+    color: #323232;
     padding-top: 25px;
     padding-left: 20px;
     -webkit-box-sizing: border-box;
@@ -1032,7 +1042,7 @@ a.breadcumbs-links-item:hover {
     vertical-align: top;
     font-size: 16px;
     line-height: 1.37em;
-    font-weight: normal;
+    font-weight: lighter;
     padding-top: 12px;
     padding-left: 56px;
     -webkit-box-sizing: border-box;
@@ -1085,7 +1095,6 @@ a.breadcumbs-links-item:hover {
             box-sizing: border-box;
     font-size: 16px;
     line-height: 1.37em;
-    color: #000000;
     text-decoration: none;
 }
 
@@ -1097,6 +1106,10 @@ a.breadcumbs-links-item:hover {
 }
 
 .news-title {
+    font-size: 16px;
+    line-height: 1.37em;
+    font-weight: normal;
+    color: #323232;
     margin-bottom: 5px;
 }
 
@@ -1105,7 +1118,7 @@ a.breadcumbs-links-item:hover {
     width: 290px;
     font-size: 24px;
     line-height: 1.25em;
-    color: #000000;
+    color: #323232;
     font-weight: bold;
     text-decoration: underline;
 }
@@ -1185,7 +1198,7 @@ a.breadcumbs-links-item:hover {
 .contacts-description-bottom {
     font-size: 14px;
     line-height: 1.42em;
-    font-weight: normal;
+    font-weight: lighter;
     color: #323232;
     margin-bottom: 5px;
 }
@@ -1202,6 +1215,7 @@ a.breadcumbs-links-item:hover {
 .contacts-description-important-phone {
     font-size: 18px;
     line-height: 1.33em;
+    font-weight: bold;
 }
 
 .contacts-description-adress {
@@ -1251,7 +1265,7 @@ a.breadcumbs-links-item:hover {
 .feedback-title {
     font-size: 24px;
     line-height: 1.16em;
-    font-weight: bold;
+    font-weight: normal;
     color: #323232;
     margin-bottom: 20px;
 }
@@ -1259,16 +1273,49 @@ a.breadcumbs-links-item:hover {
 .feedback-name,
 .feedback-email {
     width: 270px;
-    margin-bottom: 20px;
+    margin-bottom: 21px;
 }
 
 .feedback-comment {
+    border-color: #d3d3d2;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-top: 10px;    
+    padding-bottom: 13px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.71em;
+    color: #323232;    
     height: 155px;
-    width: 400px;
+    width: 430px;
     resize: none;
     margin-bottom: 23px;
-    padding-top: 10px;
 }
+
+.feedback-comment:hover {
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 9px;    
+    padding-bottom: 12px;
+    border-width: 2px;
+}
+
+.feedback-comment:focus {
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 9px;    
+    padding-bottom: 12px;
+    border-width: 2px;
+    border-color: #5b9ddf;
+    outline: none;
+}
+
+
 
 .feedback-name,
 .feedback-email,
@@ -1319,7 +1366,9 @@ a.breadcumbs-links-item:hover {
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /*Вторая страница. Блок фильтров*/
 .current-item-title {
-    margin-bottom: 24px;
+    font-weight: bold;
+    margin-bottom: 29px;
+    margin-top: -2px
 }
 
 .filters {
@@ -1371,11 +1420,11 @@ a.breadcumbs-links-item:hover {
 
 .filter-item-caption-order,
 .filter-item-caption-fat {
-    margin-bottom: 17px;    
+    margin-bottom: 15px;    
 }
 
 .filter-item-caption-price {
-    margin-bottom: 13px;
+    margin-bottom: 11px;
 }
 
 .filter-item-control {
@@ -1404,6 +1453,7 @@ a.breadcumbs-links-item:hover {
     color: #ffffff;
     border-width: 0px;
     width: 174px;
+    /*-moz-appearance: none;*/
 }
 
 .filter-item-control-order-conteiner:hover::before {
@@ -1419,7 +1469,7 @@ a.breadcumbs-links-item:hover {
     height: 36px;
 }
 
-.filter-item-control-price-range::before{
+.filter-item-control-price-range::before {
     position: absolute;
     display: block;
     width: 100%;
@@ -1486,7 +1536,7 @@ fieldset.filter-item-container {
             box-sizing: border-box;
 }
 
-.filter-item-container-fat::before{
+.filter-item-container-fat::before {
     position: absolute;
     display: block;
     width: 100%;
@@ -1591,7 +1641,7 @@ fieldset.filter-item-container {
 }
 
 .filter-item-caption-fillers {
-    margin-bottom: 18px;
+    margin-bottom: 15px;
 }
 
 .chck-filter-labels {
@@ -1670,7 +1720,7 @@ fieldset.filter-item-container {
     vertical-align: bottom;
     display: inline-block;
     vertical-align: top;
-    margin-top: 25px;
+    margin-top: 22px;
     height: 36px;
     width: 143px;
     font-size: 16px;
@@ -1749,7 +1799,7 @@ fieldset.filter-item-container {
 }
 
 .catalog-item:hover::before,
-.catalog-item:hover .fast-view-btn{
+.catalog-item:hover .fast-view-btn {
 	display: block;
 }
 
@@ -1777,7 +1827,7 @@ fieldset.filter-item-container {
     margin-right: 0px;    
 }
 
-.paginator-btn{
+.paginator-btn {
     font-size: 16px;
     line-height: 1.12em;
     text-decoration: none;
@@ -2008,7 +2058,7 @@ fieldset.filter-item-container {
     position: relative;
     font-size: 13px;
     line-height: 1.38em;
-    font-weight: bold;
+    font-weight: lighter;
     color: #ffffff;
     text-decoration: none;
     margin-bottom: 5px;
@@ -2047,6 +2097,7 @@ fieldset.filter-item-container {
 }
 
 .footer-link-hart {
+    font-weight: bold;
     padding-left: 21px;
     background-image: url("../img/icon_heart_not_active.png");
     background-repeat: no-repeat;
@@ -2091,7 +2142,7 @@ fieldset.filter-item-container {
 }
 
 .footer-copyright-logo {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 .footer-copyright-description {
@@ -2130,12 +2181,28 @@ fieldset.filter-item-container {
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+.txt-box {
+    height: 43px;
+    border-color: #d3d3d2;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 13px 13px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.71em;
+    color: #323232;
+}
 
 .txt-box:hover {
+    padding: 12px 12px;
     border-width: 2px;
 }
 
 .txt-box:focus {
+    padding: 12px 12px;
     border-width: 2px;
     border-color: #5b9ddf;
     outline: none;
@@ -2156,17 +2223,17 @@ fieldset.filter-item-container {
     height: 20px;
     font-size: 11px;
     line-height: 1.18em;
-    font-weight: normal;
+    font-weight: lighter;
     color: #999999;
 }
 
 input.txt-box:valid ~ .txt-box-lable,
-textarea.txt-box:valid ~ .txt-box-lable {
+textarea.feedback-comment:valid ~ .txt-box-lable {
     display: block;
 }
 
 input.txt-box:valid:focus ~ .txt-box-lable,
-textarea.txt-box:valid ~ .txt-box-lable  {
+textarea.feedback-comment:valid ~ .txt-box-lable  {
     color: #5b9ddf;
 }
 
@@ -2196,4 +2263,47 @@ textarea.txt-box:valid ~ .txt-box-lable  {
 
 .body-background-3 {
     background-color: #9d8b84;
+}
+
+/*Стиль для placeholder*/
+input::-webkit-input-placeholder {
+    font-weight: lighter;
+    color: #999999;
+}
+
+textarea::-webkit-input-placeholder {
+    font-weight: lighter;
+    color: #999999;
+}
+
+/* firefox 19+ */
+input::-moz-placeholder {
+    font-weight: lighter;
+    color: #999999;
+}
+
+textarea::-moz-placeholder {
+    font-weight: lighter;
+    color: #999999;
+}
+
+/* ie */
+input:-ms-input-placeholder {
+    font-weight: lighter;
+    color: #999999;
+}
+
+textarea:-ms-input-placeholder {
+    font-weight: lighter;
+    color: #999999;
+}
+
+input:-moz-placeholder {
+    font-weight: lighter;
+    color: #999999;
+}
+
+textarea:-moz-placeholder {
+    font-weight: lighter;
+    color: #999999;
 }
