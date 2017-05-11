@@ -272,6 +272,7 @@ body {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     border: 0px;
+    cursor: pointer;
 }
 
 .search-btn {
@@ -2286,11 +2287,17 @@ input.txt-box:valid ~ .txt-box-lable,
 textarea.feedback-comment:valid ~ .txt-box-lable {
     display: block;
 }
+
+
+
 /*
-input.txt-box:not(:empty)  ~ .txt-box-lable {
+input.txt-box[value=""]  {
     background-color: red;
 }
+
 */
+
+
 
 
 input.txt-box:valid:focus ~ .txt-box-lable,
