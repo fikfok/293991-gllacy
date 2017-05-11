@@ -828,6 +828,7 @@ a.breadcumbs-links-item:hover {
 }
 
 .banner-item {
+    position: relative;
     float: left;
     max-width: 560px;
     padding-top: 16px;
@@ -855,7 +856,7 @@ a.breadcumbs-links-item:hover {
 }
 
 .banner-description {
-    font-size: 17px;
+    font-size: 18px;
     padding: 0px;
     line-height: 1.22em;
     max-width: 517px;
@@ -863,8 +864,12 @@ a.breadcumbs-links-item:hover {
 }
 
 .ingredient-btn {
-    float: right;
-    margin-right: 22px;
+    /*float: right;*/
+    position: absolute;
+    /*margin-right: 22px;*/
+    display: block;
+    right: 21px;
+    bottom: 25px
 }
 
 .banner-item:first-child .ingredient-btn {
@@ -2222,7 +2227,7 @@ fieldset.filter-item-container {
     border-radius: 5px;
     border-style: solid;
     border-width: 1px;
-    padding: 13px 13px;
+    padding: 0px 13px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     font-size: 14px;
@@ -2232,12 +2237,12 @@ fieldset.filter-item-container {
 }
 
 .txt-box:hover {
-    padding: 12px 12px;
+    padding: 0px 12px;
     border-width: 2px;
 }
 
 .txt-box:focus {
-    padding: 12px 12px;
+    padding: 0px 12px;
     border-width: 2px;
     border-color: #5b9ddf;
     outline: none;
