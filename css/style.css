@@ -1493,6 +1493,20 @@ a.breadcumbs-links-item:hover {
     background-position: right center;
 }
 
+.filter-item-control-order option {
+    background-color: transparent;
+    color: #000000;
+}
+
+.filter-item-control-order::-ms-value {
+    background: none;
+}
+
+.filter-item-control-order:hover::-ms-value {
+    color: #000000;
+}
+
+
 .filter-item-control-order::-ms-expand {
     display: none;
 }
