@@ -62,7 +62,7 @@ body {
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /*Header*/
-.catalog-site .main-header {
+.index-site .main-header {
     min-height: 70px;
 }
 
@@ -156,7 +156,7 @@ body {
 
 .navigation-left-menu > li:first-child {
     position: relative;
-    padding-bottom: 17px;
+    padding-bottom: 7px;
 }
 
 .navigation-left-menu > li:hover .main-sub-menu {
