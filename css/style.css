@@ -2215,7 +2215,7 @@ fieldset.filter-item-container {
             box-sizing: border-box;
     font-size: 14px;
     font-weight: bold;
-    line-height: 1.71em;
+    line-height: 0em; /*Чёртов IE10!!!*/
     color: #323232;
 }
 
