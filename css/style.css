@@ -2286,6 +2286,12 @@ input.txt-box:valid ~ .txt-box-lable,
 textarea.feedback-comment:valid ~ .txt-box-lable {
     display: block;
 }
+/*
+input.txt-box:not(:empty)  ~ .txt-box-lable {
+    background-color: red;
+}
+*/
+
 
 input.txt-box:valid:focus ~ .txt-box-lable,
 textarea.feedback-comment:valid:focus ~ .txt-box-lable  {
