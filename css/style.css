@@ -1457,7 +1457,7 @@ a.breadcumbs-links-item:hover {
     -moz-appearance: none;
     text-indent: 1px;
     text-overflow: '';
-    background-image: url("/img/select_arrow_white.svg");
+    background-image: url("../img/select_arrow_white.svg");
     background-repeat: no-repeat;
     background-position: right center;
 }
@@ -1466,17 +1466,13 @@ a.breadcumbs-links-item:hover {
     display: none;
 }
 
-
-
-
-
 .filter-item-control-order-conteiner:hover::before {
     background-color: #ffffff;
 }
 
 .filter-item-control-order:hover {
     color: #323232;
-    background-image: url("/img/select_arrow_black.svg");
+    background-image: url("../img/select_arrow_black.svg");
 }
 
 .filter-item-control-price-range {
