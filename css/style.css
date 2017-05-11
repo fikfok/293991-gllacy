@@ -1346,8 +1346,6 @@ a.breadcumbs-links-item:hover {
     outline: none;
 }
 
-
-
 .feedback-name,
 .feedback-email,
 .feedback-comment {
@@ -2290,7 +2288,7 @@ textarea.feedback-comment:valid ~ .txt-box-lable {
 }
 
 input.txt-box:valid:focus ~ .txt-box-lable,
-textarea.feedback-comment:valid ~ .txt-box-lable  {
+textarea.feedback-comment:valid:focus ~ .txt-box-lable  {
     color: #5b9ddf;
 }
 
