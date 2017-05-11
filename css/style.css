@@ -365,7 +365,9 @@ body {
 .red-btn {
     display: inline-block;
     height: 46px;
-    padding: 13px 21px;
+    /*padding: 13px 21px;*/
+    text-align: center;
+    padding-top: 13px;
     text-decoration: none;
     color: #ffffff;
     background: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
@@ -403,6 +405,8 @@ body {
 
 .authorize-login-btn {
     float: left;
+    width: 100px;
+    padding-top: 0px;
 }
 
 .help-login {
@@ -777,7 +781,7 @@ a.breadcumbs-links-item:hover {
     margin-right: auto;
     margin-bottom: 42px;    
     margin-left: auto;
-    padding: 12px 39px;
+
     
 }
 
@@ -861,6 +865,15 @@ a.breadcumbs-links-item:hover {
     float: right;
     margin-right: 22px;
 }
+
+.banner-item:first-child .ingredient-btn {
+    width: 165px;    
+}
+
+.banner-item:last-child .ingredient-btn {
+    width: 189px;    
+}
+
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 /*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
@@ -1016,8 +1029,6 @@ a.breadcumbs-links-item:hover {
     display: none;
     position: absolute;
     width: 200px;
-    padding-left: 16px;
-    padding-right: 16px;
     left: 33px;
 }
 
@@ -1239,7 +1250,7 @@ a.breadcumbs-links-item:hover {
 
 .feedback-btn {
     width: 253px;
-    padding: 10px 28px;
+    /*padding: 10px 28px;*/
     border-radius: 25px;
 }
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
