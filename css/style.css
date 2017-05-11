@@ -855,9 +855,10 @@ a.breadcumbs-links-item:hover {
 }
 
 .banner-description {
-    font-size: 18px;
+    font-size: 17px;
+    padding: 0px;
     line-height: 1.22em;
-    max-width: 516px;
+    max-width: 517px;
     margin-bottom: 43px;
 }
 
