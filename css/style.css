@@ -747,8 +747,11 @@ a.breadcumbs-links-item:hover {
     margin: 0 auto;
     font-size: 60px;
     line-height: 1em;
-    padding-top: 275px;
     color: #ffffff;
+}
+
+.slider-title:first-child {
+    padding-top: 275px;    
 }
 
 .slider-background-1 .slider-title {
