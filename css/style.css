@@ -156,7 +156,7 @@ body {
 
 .navigation-left-menu > li:first-child {
     position: relative;
-    padding-bottom: 5px;
+    padding-bottom: 17px;
 }
 
 .navigation-left-menu > li:hover .main-sub-menu {
@@ -2287,18 +2287,6 @@ input.txt-box:valid ~ .txt-box-lable,
 textarea.feedback-comment:valid ~ .txt-box-lable {
     display: block;
 }
-
-
-
-/*
-input.txt-box[value=""]  {
-    background-color: red;
-}
-
-*/
-
-
-
 
 input.txt-box:valid:focus ~ .txt-box-lable,
 textarea.feedback-comment:valid:focus ~ .txt-box-lable  {
