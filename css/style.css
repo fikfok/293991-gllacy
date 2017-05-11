@@ -1119,7 +1119,7 @@ a.breadcumbs-links-item:hover {
 .subscription {
     float: left;
     width: 560px;
-    min-height: 220px;
+    /*min-*/ height: 220px; /*For IE10*/
     margin-bottom: 40px;
     border-radius: 15px;
     -webkit-box-sizing: border-box;
@@ -1216,7 +1216,7 @@ a.breadcumbs-links-item:hover {
     left: 870px;
     top: 60px;
     width: 302px;
-    height: 305px;
+    /*min-*/ height: 305px;/*For IE10*/
     background-color: rgb(255, 255, 255);
     border-radius: 15px;
     padding: 31px 25px;
