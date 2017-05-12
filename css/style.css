@@ -228,6 +228,11 @@ body {
     text-decoration: none;
 }
 
+.main-sub-menu-item-active {
+    background-color: #d07058;
+}
+
+
 .main-sub-menu li:first-child .main-sub-menu-item {
     font-weight: bold;
 }
@@ -527,7 +532,7 @@ body {
     border: 0;
     cursor: pointer;
     margin-right: 15px;
-
+    outline: none;
 }
 
 .cart-delete-item::before,
@@ -943,7 +948,8 @@ a.breadcumbs-links-item:hover {
     z-index: 2;
 }
 
-.item-image {
+.item-image,
+.catalog-item-photo {
     border-radius: 50%;
 }
 
@@ -1129,7 +1135,7 @@ a.breadcumbs-links-item:hover {
 .subscription {
     float: left;
     width: 560px;
-    min-height: 220px; /*For IE10*/
+    min-height: 220px; /*Для IE10 надо было убрать min-. Иначе с ним при наведении на текстовое поле белый фон прыгал вниз*/
     margin-bottom: 40px;
     border-radius: 15px;
     -webkit-box-sizing: border-box;
@@ -1173,7 +1179,7 @@ a.breadcumbs-links-item:hover {
 
 .subscription {
     background-color: #f8f7f4;
-    background-image: url("../img/background_oblique_lines.png");
+    background-image: url("../img/background_oblique_lines.jpg");
     background-position: -12px 8px;
     padding: 5px;
     font-size: 0px;
@@ -1272,8 +1278,8 @@ a.breadcumbs-links-item:hover {
 
 .feedback-btn {
     width: 253px;
-    /*padding: 10px 28px;*/
     border-radius: 25px;
+    padding-top: 10px;
 }
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
