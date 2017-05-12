@@ -731,17 +731,23 @@ a.breadcumbs-links-item:hover {
 
 .slider-background-image {
     position: absolute;
-    top: -33px;
-    left: 250px;
-    z-index: -1;
-}
-
-.slider-background-backlight {
-    position: absolute;
-    top: -114px;
-    left: 78px;
     z-index: -2;
  }
+
+.slider-background-1 .slider-background-image {
+    top: -116px;
+    left: 55px;    
+}
+
+.slider-background-2 .slider-background-image {
+    top: -116px;
+    left: 36px;    
+}
+
+.slider-background-3 .slider-background-image {
+    top: -116px;
+    left: 39px;    
+}
 
 .slider-title {
     text-align: center;
@@ -840,17 +846,18 @@ a.breadcumbs-links-item:hover {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     width: 560px;
-    height: 229px;
+    min-height: 229px;
     color: rgb(255, 255, 255);
+    border-radius: 15px;
 }
 
 .banner-item:first-child {
     margin-right: 26px;
-    background-image: url("../img/background_raspberry.png");
+    background-image: url("../img/background_raspberry.jpg");
 }
 
 .banner-item:last-child {
-    background-image: url("../img/background_chocolate_crumb.png");
+    background-image: url("../img/background_chocolate_crumb.jpg");
 }
 
 .banner-title {
@@ -864,13 +871,11 @@ a.breadcumbs-links-item:hover {
     padding: 0px;
     line-height: 1.22em;
     max-width: 517px;
-    margin-bottom: 43px;
+    margin-bottom: 112px;
 }
 
 .ingredient-btn {
-    /*float: right;*/
     position: absolute;
-    /*margin-right: 22px;*/
     display: block;
     right: 21px;
     bottom: 25px
@@ -936,6 +941,10 @@ a.breadcumbs-links-item:hover {
     position: relative;
     margin-bottom: 11px;
     z-index: 2;
+}
+
+.item-image {
+    border-radius: 50%;
 }
 
 .hit-item-corner-badge {
@@ -1120,7 +1129,7 @@ a.breadcumbs-links-item:hover {
 .subscription {
     float: left;
     width: 560px;
-    /*min-*/ height: 220px; /*For IE10*/
+    min-height: 220px; /*For IE10*/
     margin-bottom: 40px;
     border-radius: 15px;
     -webkit-box-sizing: border-box;
@@ -1134,7 +1143,10 @@ a.breadcumbs-links-item:hover {
     padding-top: 23px;
     padding-left: 20px;
     margin-right: 26px;
-    background-image: url("../img/background_strawberry.png")
+    background-image: url("../img/background_strawberry.jpg");
+    background-repeat: no-repeat;
+    background-position: 204px -36px; 
+    background-color: #ffffff;
 }
 
 .news-title {
@@ -1986,11 +1998,6 @@ fieldset.filter-item-container {
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
 }
-
-
-
-
-
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 /*Подвал*/
@@ -2001,10 +2008,26 @@ fieldset.filter-item-container {
     padding-top: 00px;
 }
 
+.top-separator {
+    position: relative;
+}
+
+.top-separator::before {
+    position: absolute;
+    content: "";
+    display: block;
+    top: -2px;
+    left: 27px;
+    right: 27px;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+
 .footer-social {
     float: left;
     font-size: 0px;
-    margin-top: 32px;
+    margin-top: 35px;
     margin-right: 202px;
     padding-left: 2px;
  }
@@ -2099,7 +2122,7 @@ fieldset.filter-item-container {
 .footer-links-table {
     float: left;
     display: table;
-    margin-top: 30px;
+    margin-top: 33px;
 }
 
 .footer-links-row {
@@ -2185,7 +2208,7 @@ fieldset.filter-item-container {
 .footer-copyright {
     float: right;
     max-width: 200px;
-    margin-top: 15px;
+    margin-top: 17px;
     margin-right: -12px;
     padding: 0px;
     color: #ffffff;
@@ -2362,4 +2385,8 @@ input:-moz-placeholder {
 textarea:-moz-placeholder {
     font-weight: lighter;
     color: #999999;
+}
+
+input, textarea {
+    font-family: "Roboto", "Arial", sans-serif;
 }
